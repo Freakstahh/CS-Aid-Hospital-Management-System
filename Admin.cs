@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    internal class Person
+    internal class Admin
     {
-
     }
 }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 
-namespace Hospital_Management
+namespace CS_Aid_Hospital_Management_System
 {
     class Inventory
     {
