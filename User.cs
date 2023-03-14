@@ -8,6 +8,7 @@ namespace CS_Aid_Hospital_Management_System
 {
     public abstract class User
     {
+        public string ID { get; private set; }
         public string Name { get; private set; }
         public string Gender { get; private set; }
         public DateTime Birthdate { get; private set; }
@@ -16,8 +17,9 @@ namespace CS_Aid_Hospital_Management_System
         internal string Username { get; private set; }
         internal string Password { get; private set; }
 
-        public User (string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password)
+        public User (string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password)
         {
+            this.ID = id;
             this.Name = name;
             this.Gender = gender;
             this.Birthdate = birthdate;
