@@ -13,7 +13,7 @@ namespace CS_Aid_Hospital_Management_System
 
         public List<Patient> Patients = new List<Patient>();
 
-        public Doctor(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string iD, string specialization):base(name, gender, birthdate, contactNumber, email,  username, password, iD)
+        public Doctor(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string iD, string specialization):base(iD, name, gender, birthdate, contactNumber, email,  username, password)
         {
             Specialization = specialization;
         }
