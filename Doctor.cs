@@ -22,6 +22,5 @@ namespace CS_Aid_Hospital_Management_System
         {
             Patients.Add(patient);
         }
-
     }
 }
