@@ -16,8 +16,8 @@ namespace CS_Aid_Hospital_Management_System
         public string Email { get; private set; }
         internal string Username { get; private set; }
         internal string Password { get; private set; }
-
-        public User (string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password)
+        public string Shifts { get; private set; }
+        public User (string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password, string shifts)
         {
             this.ID = id;
             this.Name = name;
@@ -27,6 +27,7 @@ namespace CS_Aid_Hospital_Management_System
             this.Email = email;
             this.Username = username;
             this.Password = password;
+            this.Shifts = shifts;
         }
     }
 }
