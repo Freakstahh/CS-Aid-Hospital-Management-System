@@ -12,26 +12,12 @@ namespace CS_Aid_Hospital_Management_System
         public string Specialization { get; set; }
         public int State { get; set; }//ilhanan ra ni kung on duty ang doctor or wala
 
-        public List<Patient> Patients = new List<Patient>();
-
         public Doctor(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string iD, string specialization):base(iD, name, gender, birthdate, contactNumber, email,  username, password)
         {
             this.State = 0;
             this.Specialization = specialization;
         }
 
-        public void addPatient(Patient patient)
-        {
-            Patients.Add(patient);
-        }
-        public void RemovePatient(Patient patient)
-        {
-            Patients.Remove(patient);
-        }
-        public int CountNumberOfPatients()
-        {
-            return Patients.Count;
-        }
         public void SignIn()//kung on duty ang doctor
         {
             if (this.State == 0)
