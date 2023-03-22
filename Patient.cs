@@ -10,7 +10,7 @@ namespace CS_Aid_Hospital_Management_System
     {
         public string Lastname { get; set; }
         public string Firstname { get; set; }
-        public string MiddleName { get; set; }
+        public string Middlename { get; set; }
         public string Diagnosis { get; set; }
         public int Patient_Id { get; set; }
         public int FloorNumber { get; set; }

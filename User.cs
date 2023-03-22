@@ -18,7 +18,9 @@ namespace CS_Aid_Hospital_Management_System
         internal string Password { get; private set; }
         public string Shifts { get; private set; }
         public string Departments { get; private set; }
-        public User (string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password, string shifts, string departments)
+
+        public int State { get; private set; }
+        public User(string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password, string shifts, string departments)
         {
             this.ID = id;
             this.Name = name;
@@ -29,7 +31,22 @@ namespace CS_Aid_Hospital_Management_System
             this.Username = username;
             this.Password = password;
             this.Shifts = shifts;
-            this.Departments = departments;
+            this.State = 0;
+            this. Departments = departments;
+        }
+        public void SignIn()//kung on duty ang doctor
+        {
+            if (this.State == 0)
+                this.State = 1;
+            else
+                return;
+        }
+        public void SignOut()//kung off duty
+        {
+            if (this.State == 1)
+                this.State = 0;
+            else
+                return;
         }
     }
 }
