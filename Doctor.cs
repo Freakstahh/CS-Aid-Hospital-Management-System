@@ -12,7 +12,7 @@ namespace CS_Aid_Hospital_Management_System
         public string Specialization { get; set; }
         public int State { get; set; }//ilhanan ra ni kung on duty ang doctor or wala
 
-        public Doctor(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string iD, string shifts, string specialization):base(iD, name, gender, birthdate, contactNumber, email,  username, password, shifts)
+        public Doctor(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string iD, string shifts,string departments, string specialization):base(iD, name, gender, birthdate, contactNumber, email,  username, password, shifts, departments)
         {
             this.State = 0;
             this.Specialization = specialization;

@@ -32,7 +32,7 @@ namespace CS_Aid_Hospital_Management_System
             this.Password = password;
             this.Shifts = shifts;
             this.State = 0;
-            this. Departments = departments;
+            this.Departments = departments;
         }
         public void SignIn()//kung on duty ang doctor
         {
