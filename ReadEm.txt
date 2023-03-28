@@ -1,1 +1,16 @@
-Gwapo ko
+As of March 28, 2023:
+
+Added class:
+     1. Timeslot class
+     2. Appointment  class
+     3. Appointment Scheduler class
+
+Modified class:
+     1. Patient class
+     2. Doctor class
+     3. Nurse class
+     4. Admin class
+        For this class, added only lists of Doctors and Nurses.
+
+Marcelo Rc Dumandan Guevarra
+        Contributor

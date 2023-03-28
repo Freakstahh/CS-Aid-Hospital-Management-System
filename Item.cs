@@ -12,6 +12,7 @@ namespace CS_Aid_Hospital_Management_System
     {
         public string Name { get; set; }
         public int Count { get; set; }
+        public bool isAvailable { get; private set; }
 
         public Item(string name, int count)
         {

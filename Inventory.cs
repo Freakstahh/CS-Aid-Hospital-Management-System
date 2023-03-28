@@ -25,16 +25,7 @@ namespace CS_Aid_Hospital_Management_System
             Items.Add(obj);
         }
 
-        //asks the program if a particular object is existing or not
-        public bool isAvailable(Item obj)
-        {
-            if (obj.Count == 0)
-            {
-                removeItem(obj);
-                return false;
-            }
-            return true;
-        }
+        //moved method IsAvailable to Class Item
 
         //returns the count of items
         //for example, it returns the count of syringes and masks in your inventory
