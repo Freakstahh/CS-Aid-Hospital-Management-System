@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Patient
+    public class Patient
     {
-        public string Lastname { get; set; }
-        public string Firstname { get; set; }
-        public string Middlename { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+        public string MiddleName { get; set; }
         public string Diagnosis { get; set; }
         public int Patient_Id { get; set; }
         public int FloorNumber { get; set; }
@@ -20,8 +20,8 @@ namespace CS_Aid_Hospital_Management_System
         public DateTime Birthdate { get; set; }
         public Patient(string lastname, string firstname, string middleName, string diagnosis, int patient_Id, int floorNumber, int roomNumber, int bills ,DateTime admitDate, DateTime birthdate)
         {
-            this.Lastname = lastname;
-            this.Firstname = firstname;
+            this.LastName = lastname;
+            this.FirstName = firstname;
             this.MiddleName = middleName;
             this.Diagnosis = diagnosis;
             this.Patient_Id = patient_Id;
