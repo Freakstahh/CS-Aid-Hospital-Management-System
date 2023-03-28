@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Doctor : User
+    public class Doctor : User
     {
         public int Employee_ID { get; set; }
         public string Specialization { get; set; }

@@ -22,20 +22,24 @@ namespace CS_Aid_Hospital_Management_System
             }
         }
 
-        public void AddPatient(int floorNum, int roomNum)
+        public bool AddPatient(int floorNum, int roomNum)
         {
             if(isInputValid(floorNum, roomNum) == true && this.Rooms[(floorNum - 1) * 10 + roomNum].State == 0)
             {
                 this.Rooms[(floorNum-1) * 10 + roomNum].State = 1;
+                return true;
             }
+            return false;
         }
 
-        public void DismissPatient(int floorNum, int roomNum)
+        public bool DismissPatient(int floorNum, int roomNum)
         {
             if (isInputValid(floorNum, roomNum) == true)
             {
                 this.Rooms[(floorNum - 1) * 10 + roomNum].State = 0;
+                return true;
             }
+            return false;
         }
         
         private bool isInputValid(int floorNum, int roomNum)
