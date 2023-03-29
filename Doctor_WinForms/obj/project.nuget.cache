@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WGLU7W/cq8fcIBtZXuqHQpQo3Get7lji/iPjdnh/jZ6GjyJYmwp7bAEIDQ/2u8S0iqHkCOj3CDM0ambMPPBFeg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nethk\\source\\repos\\Doctor_WinForms\\Doctor_WinForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nethk\\.nuget\\packages\\fontawesome.sharp\\6.3.0\\fontawesome.sharp.6.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}
