@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS Aid Hospital Management 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doctor_WinForms", "..\Doctor_WinForms\Doctor_WinForms.csproj", "{A76A81C7-FF6F-4805-B3A6-6C5741AD99E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "..\TestProject1\TestProject1.csproj", "{F9FE23FE-4684-4BD0-B65E-29693F440672}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A76A81C7-FF6F-4805-B3A6-6C5741AD99E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A76A81C7-FF6F-4805-B3A6-6C5741AD99E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A76A81C7-FF6F-4805-B3A6-6C5741AD99E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FE23FE-4684-4BD0-B65E-29693F440672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FE23FE-4684-4BD0-B65E-29693F440672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FE23FE-4684-4BD0-B65E-29693F440672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FE23FE-4684-4BD0-B65E-29693F440672}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

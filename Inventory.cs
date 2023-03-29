@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Inventory
+    public class Inventory
     {
         public string Name { get; set; }
         public List<Item> Items { get; set; }
