@@ -8,7 +8,7 @@ using System.Xml.Linq;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Item
+    public class Item
     {
         public string Name { get; set; }
         public int Count { get; set; }

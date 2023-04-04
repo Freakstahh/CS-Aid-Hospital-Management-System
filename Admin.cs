@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Admin: User
+    public class Admin: User
     {
         private string UniqueKey;
         public List<Patient> Patients = new List<Patient>();

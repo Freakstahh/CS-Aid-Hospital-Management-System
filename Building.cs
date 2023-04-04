@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    class Building
+    public class Building
     {
         public Room[] Rooms;
         public Building()
