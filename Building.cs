@@ -17,12 +17,12 @@ namespace CS_Aid_Hospital_Management_System
 
         private void CreateRooms(Room[] rooms)
         {
-            int x = 0;
+            int x = 1;
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 20; j++)
                 {
-                    rooms[i * x + (j + 1)] = new Room(i, j, "Default");
+                    rooms[i * 20 + j] = new Room(i, j, "Default");
                 }
                 x += 10;
             }

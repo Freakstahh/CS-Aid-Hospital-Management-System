@@ -49,8 +49,9 @@ namespace CS_Aid_Hospital_Management_System
         {
             if (obj == null || num > obj.Count || num < 0)
                 return;
-            obj.Count -= obj.Count;
+            obj.Count -= num;
         }
+
 
         //removes item from your inventory
         public void removeItem(Item obj)
@@ -63,10 +64,13 @@ namespace CS_Aid_Hospital_Management_System
         //basically cleans your inventory
         public void cleanInventory()
         {
-            foreach (Item item in Items)
+            for (int i = Items.Count - 1; i >= 0; i--)
             {
+                Item item = Items[i];
                 if (item.Count == 0)
-                    Items.Remove(item);
+                {
+                    Items.RemoveAt(i);
+                }
             }
         }
     }

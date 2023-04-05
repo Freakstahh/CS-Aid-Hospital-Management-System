@@ -5,6 +5,16 @@ VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS Aid Hospital Management System", "CS Aid Hospital Management System.csproj", "{A0F0D8DD-A874-4D5B-AD9D-A37D482E9521}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomNUnit", "..\RoomNUnit\RoomNUnit.csproj", "{AA839D6F-7249-4F91-95D4-95A021163E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminNUnit", "..\DoctorNUnit\AdminNUnit.csproj", "{F114EE81-5E23-4D93-93B3-749DE1850A44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemNUnit", "..\ItemNUnit\ItemNUnit.csproj", "{702425B9-5125-46F6-ADA0-9C8C1D2D8955}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryNUnit", "..\InventoryNUnit\InventoryNUnit.csproj", "{B440F69E-AF69-490C-A8FC-D681FB127FA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentNUnit", "..\AppointmentNUnit\AppointmentNUnit.csproj", "{7B38D258-F79B-463E-97F6-FD943EC137E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{A0F0D8DD-A874-4D5B-AD9D-A37D482E9521}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0F0D8DD-A874-4D5B-AD9D-A37D482E9521}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0F0D8DD-A874-4D5B-AD9D-A37D482E9521}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA839D6F-7249-4F91-95D4-95A021163E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA839D6F-7249-4F91-95D4-95A021163E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA839D6F-7249-4F91-95D4-95A021163E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA839D6F-7249-4F91-95D4-95A021163E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F114EE81-5E23-4D93-93B3-749DE1850A44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F114EE81-5E23-4D93-93B3-749DE1850A44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F114EE81-5E23-4D93-93B3-749DE1850A44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F114EE81-5E23-4D93-93B3-749DE1850A44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{702425B9-5125-46F6-ADA0-9C8C1D2D8955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{702425B9-5125-46F6-ADA0-9C8C1D2D8955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{702425B9-5125-46F6-ADA0-9C8C1D2D8955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{702425B9-5125-46F6-ADA0-9C8C1D2D8955}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B440F69E-AF69-490C-A8FC-D681FB127FA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B440F69E-AF69-490C-A8FC-D681FB127FA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B440F69E-AF69-490C-A8FC-D681FB127FA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B440F69E-AF69-490C-A8FC-D681FB127FA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B38D258-F79B-463E-97F6-FD943EC137E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B38D258-F79B-463E-97F6-FD943EC137E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B38D258-F79B-463E-97F6-FD943EC137E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B38D258-F79B-463E-97F6-FD943EC137E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

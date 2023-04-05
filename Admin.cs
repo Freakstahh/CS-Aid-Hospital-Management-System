@@ -17,20 +17,19 @@ namespace CS_Aid_Hospital_Management_System
         {
             this.UniqueKey = uniqueKey;
         }
-        public void addPatient(Patient patient, Building building,int floorNum, int roomNum)
+        public void addPatient(Patient patient, Building building, int floorNum, int roomNum)
         {
-            if(building.AddPatient(floorNum, roomNum))
+            if (!Patients.Contains(patient) && building.AddPatient(floorNum, roomNum))
             {
                 Patients.Add(patient);
             }
         }
         public void RemovePatient(Patient patient, Building building, int floorNum, int roomNum)
         {
-            if(building.DismissPatient(floorNum, roomNum))
+            if (building.DismissPatient(floorNum, roomNum))
             {
                 Patients.Remove(patient);
             }
-
         }
         public int CountNumberOfPatients()
         {
