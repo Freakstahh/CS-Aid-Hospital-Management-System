@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CS_Aid_Hospital_Management_System
 {
-    public abstract class User
+    public class User
     {
         public string ID { get; private set; }
         public string Name { get; private set; }
