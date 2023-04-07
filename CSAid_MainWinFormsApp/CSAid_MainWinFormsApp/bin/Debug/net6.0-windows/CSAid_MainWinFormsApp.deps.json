@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CSAid_MainWinFormsApp/1.0.0": {
+        "runtime": {
+          "CSAid_MainWinFormsApp.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CSAid_MainWinFormsApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
