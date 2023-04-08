@@ -31,5 +31,10 @@ namespace CSAid_MainWinFormsApp.View
         {
 
         }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

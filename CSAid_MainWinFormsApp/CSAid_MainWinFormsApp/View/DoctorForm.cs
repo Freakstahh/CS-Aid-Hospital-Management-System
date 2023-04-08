@@ -16,5 +16,15 @@ namespace CSAid_MainWinFormsApp.View
         {
             InitializeComponent();
         }
+
+        private void panel_lower_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
