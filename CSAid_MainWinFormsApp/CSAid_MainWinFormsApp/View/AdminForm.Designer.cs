@@ -113,7 +113,7 @@
             panel6.Controls.Add(pictureBox9);
             panel6.Controls.Add(button4);
             panel6.Dock = DockStyle.Left;
-            panel6.Location = new Point(853, 0);
+            panel6.Location = new Point(870, 0);
             panel6.Name = "panel6";
             panel6.Size = new Size(107, 111);
             panel6.TabIndex = 14;
@@ -147,7 +147,7 @@
             panel_inventory.Controls.Add(pictureBox8);
             panel_inventory.Controls.Add(button_inventory);
             panel_inventory.Dock = DockStyle.Left;
-            panel_inventory.Location = new Point(746, 0);
+            panel_inventory.Location = new Point(763, 0);
             panel_inventory.Name = "panel_inventory";
             panel_inventory.Size = new Size(107, 111);
             panel_inventory.TabIndex = 13;
@@ -181,7 +181,7 @@
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(button_adddoctor);
             panel5.Dock = DockStyle.Left;
-            panel5.Location = new Point(639, 0);
+            panel5.Location = new Point(656, 0);
             panel5.Name = "panel5";
             panel5.Size = new Size(107, 111);
             panel5.TabIndex = 12;
@@ -206,7 +206,7 @@
             button_adddoctor.Name = "button_adddoctor";
             button_adddoctor.Size = new Size(94, 61);
             button_adddoctor.TabIndex = 11;
-            button_adddoctor.Text = "Add Doctor";
+            button_adddoctor.Text = "Doctors";
             button_adddoctor.UseVisualStyleBackColor = false;
             button_adddoctor.Click += button_adddoctor_Click;
             // 
@@ -215,7 +215,7 @@
             panel4.Controls.Add(pictureBox7);
             panel4.Controls.Add(button_addnurse);
             panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(533, 0);
+            panel4.Location = new Point(550, 0);
             panel4.Name = "panel4";
             panel4.Size = new Size(106, 111);
             panel4.TabIndex = 11;
@@ -240,7 +240,7 @@
             button_addnurse.Name = "button_addnurse";
             button_addnurse.Size = new Size(94, 61);
             button_addnurse.TabIndex = 10;
-            button_addnurse.Text = "Add Nurse";
+            button_addnurse.Text = "Nurses";
             button_addnurse.UseVisualStyleBackColor = false;
             button_addnurse.Click += button_addnurse_Click;
             // 
@@ -251,13 +251,13 @@
             panel3.Dock = DockStyle.Left;
             panel3.Location = new Point(410, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(123, 111);
+            panel3.Size = new Size(140, 111);
             panel3.TabIndex = 10;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.appointment;
-            pictureBox5.Location = new Point(32, 0);
+            pictureBox5.Location = new Point(40, 0);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(59, 44);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -272,9 +272,9 @@
             button_addappointments.ForeColor = SystemColors.Control;
             button_addappointments.Location = new Point(6, 43);
             button_addappointments.Name = "button_addappointments";
-            button_addappointments.Size = new Size(111, 61);
+            button_addappointments.Size = new Size(128, 61);
             button_addappointments.TabIndex = 10;
-            button_addappointments.Text = "Add Appointment";
+            button_addappointments.Text = "Appointments";
             button_addappointments.UseVisualStyleBackColor = false;
             button_addappointments.Click += button_addappointments_Click;
             // 
@@ -328,7 +328,7 @@
             button_addPatient.Name = "button_addPatient";
             button_addPatient.Size = new Size(94, 61);
             button_addPatient.TabIndex = 9;
-            button_addPatient.Text = "Add Patient";
+            button_addPatient.Text = "Patients";
             button_addPatient.UseVisualStyleBackColor = false;
             button_addPatient.Click += button_addPatient_Click;
             // 

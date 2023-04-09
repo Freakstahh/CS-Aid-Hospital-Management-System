@@ -55,7 +55,6 @@
             nurse_Departments1 = new Nurse_Departments();
             nurse_Rounds1 = new Nurse_Rounds();
             nurse_Shifts1 = new Nurse_Shifts();
-            domainUpDown1 = new DomainUpDown();
             panel_upperLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -119,7 +118,6 @@
             // 
             panel_upper.BackColor = Color.FromArgb(33, 33, 33);
             panel_upper.BorderStyle = BorderStyle.Fixed3D;
-            panel_upper.Controls.Add(domainUpDown1);
             panel_upper.Controls.Add(panel3);
             panel_upper.Controls.Add(panel4);
             panel_upper.Controls.Add(panel2);
@@ -375,14 +373,6 @@
             nurse_Shifts1.Size = new Size(1145, 503);
             nurse_Shifts1.TabIndex = 0;
             // 
-            // domainUpDown1
-            // 
-            domainUpDown1.Location = new Point(798, 69);
-            domainUpDown1.Name = "domainUpDown1";
-            domainUpDown1.Size = new Size(150, 27);
-            domainUpDown1.TabIndex = 16;
-            domainUpDown1.Text = "domainUpDown1";
-            // 
             // NurseForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -442,6 +432,5 @@
         private Nurse_Departments nurse_Departments1;
         private Nurse_Rounds nurse_Rounds1;
         private Nurse_Shifts nurse_Shifts1;
-        private DomainUpDown domainUpDown1;
     }
 }
