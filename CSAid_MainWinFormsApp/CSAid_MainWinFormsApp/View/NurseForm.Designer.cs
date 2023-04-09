@@ -52,9 +52,10 @@
             pictureBox3 = new PictureBox();
             linkLabel_admin = new LinkLabel();
             panel_lower = new Panel();
-            nurse_Shifts1 = new Nurse_Shifts();
-            nurse_Rounds1 = new Nurse_Rounds();
             nurse_Departments1 = new Nurse_Departments();
+            nurse_Rounds1 = new Nurse_Rounds();
+            nurse_Shifts1 = new Nurse_Shifts();
+            domainUpDown1 = new DomainUpDown();
             panel_upperLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -118,6 +119,7 @@
             // 
             panel_upper.BackColor = Color.FromArgb(33, 33, 33);
             panel_upper.BorderStyle = BorderStyle.Fixed3D;
+            panel_upper.Controls.Add(domainUpDown1);
             panel_upper.Controls.Add(panel3);
             panel_upper.Controls.Add(panel4);
             panel_upper.Controls.Add(panel2);
@@ -141,7 +143,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.nurse;
+            pictureBox6.Image = Properties.Resources.plastic_surgery;
             pictureBox6.Location = new Point(35, 1);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(59, 44);
@@ -186,7 +188,7 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = Properties.Resources.nurse;
+            pictureBox5.Image = Properties.Resources.arrow;
             pictureBox5.Location = new Point(23, 1);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(59, 44);
@@ -243,7 +245,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = Properties.Resources.hospitalisation;
+            pictureBox4.Image = Properties.Resources.work_schedule;
             pictureBox4.Location = new Point(27, 1);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(59, 44);
@@ -349,13 +351,13 @@
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
             // 
-            // nurse_Shifts1
+            // nurse_Departments1
             // 
-            nurse_Shifts1.BackColor = Color.FromArgb(33, 33, 33);
-            nurse_Shifts1.Location = new Point(-2, 111);
-            nurse_Shifts1.Name = "nurse_Shifts1";
-            nurse_Shifts1.Size = new Size(1145, 503);
-            nurse_Shifts1.TabIndex = 0;
+            nurse_Departments1.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_Departments1.Location = new Point(-2, 111);
+            nurse_Departments1.Name = "nurse_Departments1";
+            nurse_Departments1.Size = new Size(1147, 503);
+            nurse_Departments1.TabIndex = 2;
             // 
             // nurse_Rounds1
             // 
@@ -365,13 +367,21 @@
             nurse_Rounds1.Size = new Size(1147, 503);
             nurse_Rounds1.TabIndex = 1;
             // 
-            // nurse_Departments1
+            // nurse_Shifts1
             // 
-            nurse_Departments1.BackColor = Color.FromArgb(33, 33, 33);
-            nurse_Departments1.Location = new Point(-2, 111);
-            nurse_Departments1.Name = "nurse_Departments1";
-            nurse_Departments1.Size = new Size(1147, 503);
-            nurse_Departments1.TabIndex = 2;
+            nurse_Shifts1.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_Shifts1.Location = new Point(-2, 111);
+            nurse_Shifts1.Name = "nurse_Shifts1";
+            nurse_Shifts1.Size = new Size(1145, 503);
+            nurse_Shifts1.TabIndex = 0;
+            // 
+            // domainUpDown1
+            // 
+            domainUpDown1.Location = new Point(798, 69);
+            domainUpDown1.Name = "domainUpDown1";
+            domainUpDown1.Size = new Size(150, 27);
+            domainUpDown1.TabIndex = 16;
+            domainUpDown1.Text = "domainUpDown1";
             // 
             // NurseForm
             // 
@@ -432,5 +442,6 @@
         private Nurse_Departments nurse_Departments1;
         private Nurse_Rounds nurse_Rounds1;
         private Nurse_Shifts nurse_Shifts1;
+        private DomainUpDown domainUpDown1;
     }
 }

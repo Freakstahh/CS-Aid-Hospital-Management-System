@@ -83,6 +83,16 @@ namespace CSAid_MainWinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arrow {
+            get {
+                object obj = ResourceManager.GetObject("arrow", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bed {
             get {
                 object obj = ResourceManager.GetObject("bed", resourceCulture);
@@ -213,6 +223,16 @@ namespace CSAid_MainWinFormsApp.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plastic_surgery {
+            get {
+                object obj = ResourceManager.GetObject("plastic-surgery", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile {
             get {
                 object obj = ResourceManager.GetObject("profile", resourceCulture);
@@ -266,6 +286,16 @@ namespace CSAid_MainWinFormsApp.Properties {
         internal static System.Drawing.Bitmap VSU_Seal_2022 {
             get {
                 object obj = ResourceManager.GetObject("VSU_Seal_2022", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap work_schedule {
+            get {
+                object obj = ResourceManager.GetObject("work-schedule", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
