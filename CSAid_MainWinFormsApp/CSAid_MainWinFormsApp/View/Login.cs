@@ -47,12 +47,6 @@ namespace CSAid_MainWinFormsApp.View
                 textBox_username.Clear();
                 textBox_pass.Clear();
             }
-            else if (textBox_username.Text == "patient" && textBox_pass.Text == "patient123")
-            {
-                new PatientHome().Show();
-                textBox_username.Clear();
-                textBox_pass.Clear();
-            }
             else
             {
                 MessageBox.Show("Incorrect Username or Password Input.\nPlease Try Again.");

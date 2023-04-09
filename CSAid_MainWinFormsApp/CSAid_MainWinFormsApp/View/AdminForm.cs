@@ -24,7 +24,12 @@ namespace CSAid_MainWinFormsApp.View
 
         private void AdminForm_Load(object sender, EventArgs e)
         {
-
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = false;
         }
 
         private void panel_lower_Paint(object sender, PaintEventArgs e)
@@ -35,6 +40,66 @@ namespace CSAid_MainWinFormsApp.View
         private void logout_button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button_addPatient_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = true;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = false;
+        }
+
+        private void button_addappointments_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = true;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = false;
+        }
+
+        private void button_addnurse_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = true;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = false;
+        }
+
+        private void button_adddoctor_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = true;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = false;
+        }
+
+        private void button_inventory_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = true;
+            this.admin_availableRooms1.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.admin_addPatient1.Visible = false;
+            this.admin_addAppointment1.Visible = false;
+            this.admin_addDoctor1.Visible = false;
+            this.admin_addNurse1.Visible = false;
+            this.admin_Inventory1.Visible = false;
+            this.admin_availableRooms1.Visible = true;
         }
     }
 }

@@ -4,8 +4,35 @@
     <Compile Update="View\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\Admin_addAppointment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin_addDoctor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin_addNurse.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin_addPatient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin_availableRooms.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Admin_Inventory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="View\DoctorForm.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="View\Doctor_Appointments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Doctor_Operations.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Doctor_Specialization.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Login.cs">
       <SubType>UserControl</SubType>
@@ -16,8 +43,14 @@
     <Compile Update="View\NurseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="View\PatientHome.cs">
-      <SubType>Form</SubType>
+    <Compile Update="View\Nurse_Departments.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Nurse_Rounds.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Nurse_Shifts.cs">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Register.cs">
       <SubType>UserControl</SubType>

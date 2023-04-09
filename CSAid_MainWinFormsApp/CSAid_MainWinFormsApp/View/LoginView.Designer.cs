@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginView));
             leftPanel = new Panel();
+            linkLabellogin = new LinkLabel();
             linkreg = new LinkLabel();
             noacc = new Label();
             tostart = new Label();
@@ -39,7 +40,6 @@
             bg = new PictureBox();
             login1 = new Login();
             register1 = new Register();
-            linkLabellogin = new LinkLabel();
             leftPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)vsulogo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)logo).BeginInit();
@@ -61,6 +61,20 @@
             leftPanel.Name = "leftPanel";
             leftPanel.Size = new Size(607, 598);
             leftPanel.TabIndex = 0;
+            // 
+            // linkLabellogin
+            // 
+            linkLabellogin.AutoSize = true;
+            linkLabellogin.BackColor = Color.FromArgb(250, 250, 250);
+            linkLabellogin.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabellogin.LinkColor = Color.Black;
+            linkLabellogin.Location = new Point(225, 531);
+            linkLabellogin.Name = "linkLabellogin";
+            linkLabellogin.Size = new Size(166, 25);
+            linkLabellogin.TabIndex = 4;
+            linkLabellogin.TabStop = true;
+            linkLabellogin.Text = "Back to login page";
+            linkLabellogin.LinkClicked += linkLabellogin_LinkClicked;
             // 
             // linkreg
             // 
@@ -162,37 +176,25 @@
             register1.Size = new Size(558, 598);
             register1.TabIndex = 2;
             // 
-            // linkLabellogin
-            // 
-            linkLabellogin.AutoSize = true;
-            linkLabellogin.BackColor = Color.FromArgb(250, 250, 250);
-            linkLabellogin.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point);
-            linkLabellogin.LinkColor = Color.Black;
-            linkLabellogin.Location = new Point(225, 531);
-            linkLabellogin.Name = "linkLabellogin";
-            linkLabellogin.Size = new Size(166, 25);
-            linkLabellogin.TabIndex = 4;
-            linkLabellogin.TabStop = true;
-            linkLabellogin.Text = "Back to login page";
-            linkLabellogin.LinkClicked += linkLabellogin_LinkClicked;
-            // 
             // LoginView
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
             BackColor = Color.FromArgb(50, 50, 50);
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1174, 598);
             Controls.Add(login1);
             Controls.Add(leftPanel);
             Controls.Add(register1);
-            FormBorderStyle = FormBorderStyle.None;
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             HelpButton = true;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "LoginView";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "CSAid Hospital Management System";
+            Load += LoginView_Load;
             leftPanel.ResumeLayout(false);
             leftPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)vsulogo).EndInit();

@@ -48,5 +48,11 @@ namespace CSAid_MainWinFormsApp.View
             this.login1.Visible = true;
             this.register1.Visible = false;
         }
+
+        private void LoginView_Load(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }

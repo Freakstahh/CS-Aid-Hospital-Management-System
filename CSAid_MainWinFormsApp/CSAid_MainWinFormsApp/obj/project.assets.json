@@ -8,19 +8,24 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
+    "C:\\Users\\nethk\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\Freakstahh\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp.csproj",
+      "projectUniqueName": "C:\\Users\\nethk\\Source\\Repos\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp.csproj",
       "projectName": "CSAid_MainWinFormsApp",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\Freakstahh\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\Freakstahh\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\obj\\",
+      "projectPath": "C:\\Users\\nethk\\Source\\Repos\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp.csproj",
+      "packagesPath": "C:\\Users\\nethk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\nethk\\Source\\Repos\\CS-Aid-Hospital-Management-System\\CSAid_MainWinFormsApp\\CSAid_MainWinFormsApp\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\nethk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
