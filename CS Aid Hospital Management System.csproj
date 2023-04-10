@@ -12,4 +12,10 @@
     <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="CSAid_MainWinFormsApp">
+      <HintPath>..\UI\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\bin\Debug\net6.0-windows\CSAid_MainWinFormsApp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
