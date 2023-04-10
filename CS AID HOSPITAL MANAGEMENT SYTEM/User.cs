@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,10 +15,11 @@ namespace CS_Aid_Hospital_Management_System
         public DateTime Birthdate { get; private set; }
         public int ContactNumber { get; private set; }
         public string Email { get; private set; }
-        internal string Username { get; private set; }
-        internal string Password { get; private set; }
+        public string Username { get; private set; }
         public string Shifts { get; private set; }
         public string Departments { get; private set; }
+        [JsonRequired]
+        private string Password;
 
         public int State { get; private set; }
         public User(string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password, string shifts, string departments)
@@ -47,6 +49,11 @@ namespace CS_Aid_Hospital_Management_System
                 this.State = 0;
             else
                 return;
+        }
+
+        public bool CanLogin(string username, string password)
+        {
+            return username.Equals(this.Username) && password.Equals(this.Password);
         }
     }
 }

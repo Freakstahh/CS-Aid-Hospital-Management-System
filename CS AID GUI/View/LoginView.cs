@@ -51,7 +51,7 @@ namespace CSAid_MainWinFormsApp.View
 
         private void LoginView_Load(object sender, EventArgs e)
         {
-            
+
         }
 
     }
