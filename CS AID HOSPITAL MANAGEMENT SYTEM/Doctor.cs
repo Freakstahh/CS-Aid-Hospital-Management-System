@@ -8,7 +8,6 @@ namespace CS_Aid_Hospital_Management_System
 {
     public class Doctor : User
     {
-        public int Employee_ID { get; set; }
         public string Specialization { get; set; }
         public List <Patient> Patients { get; set; }
 
