@@ -26,8 +26,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = false;
         }
@@ -46,8 +45,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = true;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = false;
         }
@@ -56,8 +54,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = true;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = false;
         }
@@ -66,8 +63,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = true;
+            this.admin_empAccounts1.Visible = true;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = false;
         }
@@ -76,8 +72,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = true;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = false;
         }
@@ -86,8 +81,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = true;
             this.admin_availableRooms1.Visible = false;
         }
@@ -96,8 +90,7 @@ namespace CSAid_MainWinFormsApp.View
         {
             this.admin_addPatient1.Visible = false;
             this.admin_addAppointment1.Visible = false;
-            this.admin_addDoctor1.Visible = false;
-            this.admin_addNurse1.Visible = false;
+            this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = true;
         }

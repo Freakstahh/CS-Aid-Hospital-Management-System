@@ -35,7 +35,6 @@ namespace CSAid_MainWinFormsApp.View
         private void linkreg_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.login1.Visible = false;
-            this.register1.Visible = true;
         }
 
         private void login1_Load(object sender, EventArgs e)
@@ -46,7 +45,6 @@ namespace CSAid_MainWinFormsApp.View
         private void linkLabellogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.login1.Visible = true;
-            this.register1.Visible = false;
         }
 
         private void LoginView_Load(object sender, EventArgs e)

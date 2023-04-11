@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             panel_lower = new Panel();
-            doctor_Specialization1 = new Doctor_Specialization();
-            doctor_Operations1 = new Doctor_Operations();
-            doctor_Appointments1 = new Doctor_Appointments();
+            doctor_Appointments2 = new Doctor_Appointments();
+            doctor_Operations2 = new Doctor_Operations();
             panel_upper = new Panel();
-            panel4 = new Panel();
-            pictureBox7 = new PictureBox();
-            button_specialization = new Button();
+            panel1 = new Panel();
+            pictureBox6 = new PictureBox();
+            linkLabel1 = new LinkLabel();
+            label4 = new Label();
             panel3 = new Panel();
             pictureBox5 = new PictureBox();
             button_appointments = new Button();
@@ -54,8 +54,8 @@
             linkLabel_admin = new LinkLabel();
             panel_lower.SuspendLayout();
             panel_upper.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel2.SuspendLayout();
@@ -71,45 +71,36 @@
             // 
             panel_lower.BackColor = Color.FromArgb(33, 33, 33);
             panel_lower.BorderStyle = BorderStyle.Fixed3D;
-            panel_lower.Controls.Add(doctor_Specialization1);
-            panel_lower.Controls.Add(doctor_Operations1);
-            panel_lower.Controls.Add(doctor_Appointments1);
+            panel_lower.Controls.Add(doctor_Appointments2);
+            panel_lower.Controls.Add(doctor_Operations2);
             panel_lower.Dock = DockStyle.Fill;
             panel_lower.Location = new Point(0, 115);
             panel_lower.Name = "panel_lower";
-            panel_lower.Size = new Size(1147, 501);
+            panel_lower.Size = new Size(1260, 501);
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
             // 
-            // doctor_Specialization1
+            // doctor_Appointments2
             // 
-            doctor_Specialization1.BackColor = Color.FromArgb(33, 33, 33);
-            doctor_Specialization1.Location = new Point(-2, -4);
-            doctor_Specialization1.Name = "doctor_Specialization1";
-            doctor_Specialization1.Size = new Size(1147, 503);
-            doctor_Specialization1.TabIndex = 2;
+            doctor_Appointments2.BackColor = Color.FromArgb(33, 33, 33);
+            doctor_Appointments2.Location = new Point(-2, -2);
+            doctor_Appointments2.Name = "doctor_Appointments2";
+            doctor_Appointments2.Size = new Size(1260, 501);
+            doctor_Appointments2.TabIndex = 1;
             // 
-            // doctor_Operations1
+            // doctor_Operations2
             // 
-            doctor_Operations1.BackColor = Color.FromArgb(33, 33, 33);
-            doctor_Operations1.Location = new Point(-2, -2);
-            doctor_Operations1.Name = "doctor_Operations1";
-            doctor_Operations1.Size = new Size(1147, 501);
-            doctor_Operations1.TabIndex = 1;
-            // 
-            // doctor_Appointments1
-            // 
-            doctor_Appointments1.BackColor = Color.FromArgb(33, 33, 33);
-            doctor_Appointments1.Location = new Point(-2, -4);
-            doctor_Appointments1.Name = "doctor_Appointments1";
-            doctor_Appointments1.Size = new Size(1147, 503);
-            doctor_Appointments1.TabIndex = 0;
+            doctor_Operations2.BackColor = Color.FromArgb(33, 33, 33);
+            doctor_Operations2.Location = new Point(-2, -4);
+            doctor_Operations2.Name = "doctor_Operations2";
+            doctor_Operations2.Size = new Size(1147, 503);
+            doctor_Operations2.TabIndex = 0;
             // 
             // panel_upper
             // 
             panel_upper.BackColor = Color.FromArgb(33, 33, 33);
             panel_upper.BorderStyle = BorderStyle.Fixed3D;
-            panel_upper.Controls.Add(panel4);
+            panel_upper.Controls.Add(panel1);
             panel_upper.Controls.Add(panel3);
             panel_upper.Controls.Add(panel2);
             panel_upper.Controls.Add(panel_upperLeft);
@@ -117,42 +108,53 @@
             panel_upper.Dock = DockStyle.Top;
             panel_upper.Location = new Point(0, 0);
             panel_upper.Name = "panel_upper";
-            panel_upper.Size = new Size(1147, 115);
+            panel_upper.Size = new Size(1260, 115);
             panel_upper.TabIndex = 2;
             // 
-            // panel4
+            // panel1
             // 
-            panel4.Controls.Add(pictureBox7);
-            panel4.Controls.Add(button_specialization);
-            panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(550, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(147, 111);
-            panel4.TabIndex = 13;
+            panel1.Controls.Add(pictureBox6);
+            panel1.Controls.Add(linkLabel1);
+            panel1.Controls.Add(label4);
+            panel1.Dock = DockStyle.Right;
+            panel1.Location = new Point(756, 0);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(250, 111);
+            panel1.TabIndex = 15;
             // 
-            // pictureBox7
+            // pictureBox6
             // 
-            pictureBox7.Image = Properties.Resources.stethoscope;
-            pictureBox7.Location = new Point(45, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(59, 44);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 13;
-            pictureBox7.TabStop = false;
+            pictureBox6.Image = Properties.Resources.stethoscope;
+            pictureBox6.Location = new Point(13, 1);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(59, 44);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 12;
+            pictureBox6.TabStop = false;
             // 
-            // button_specialization
+            // linkLabel1
             // 
-            button_specialization.BackColor = Color.FromArgb(74, 98, 101);
-            button_specialization.FlatStyle = FlatStyle.Popup;
-            button_specialization.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_specialization.ForeColor = SystemColors.Control;
-            button_specialization.Location = new Point(6, 43);
-            button_specialization.Name = "button_specialization";
-            button_specialization.Size = new Size(134, 61);
-            button_specialization.TabIndex = 10;
-            button_specialization.Text = "Specialization";
-            button_specialization.UseVisualStyleBackColor = false;
-            button_specialization.Click += button_addnurse_Click;
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.FromArgb(33, 198, 182);
+            linkLabel1.Location = new Point(54, 72);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(178, 25);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Specialization_Name";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Semibold", 9.8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(33, 198, 182);
+            label4.Location = new Point(13, 47);
+            label4.Name = "label4";
+            label4.Size = new Size(118, 23);
+            label4.TabIndex = 8;
+            label4.Text = "Specialization:";
+            label4.Click += label4_Click;
             // 
             // panel3
             // 
@@ -272,7 +274,7 @@
             panel_upperRight.Controls.Add(pictureBox3);
             panel_upperRight.Controls.Add(linkLabel_admin);
             panel_upperRight.Dock = DockStyle.Right;
-            panel_upperRight.Location = new Point(893, 0);
+            panel_upperRight.Location = new Point(1006, 0);
             panel_upperRight.Name = "panel_upperRight";
             panel_upperRight.Size = new Size(250, 111);
             panel_upperRight.TabIndex = 7;
@@ -338,16 +340,18 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1147, 616);
+            ClientSize = new Size(1260, 616);
             Controls.Add(panel_lower);
             Controls.Add(panel_upper);
             Name = "DoctorForm";
             Text = "CSAid Hospital Management System - Doctor";
+            WindowState = FormWindowState.Maximized;
             Load += DoctorForm_Load;
             panel_lower.ResumeLayout(false);
             panel_upper.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel2.ResumeLayout(false);
@@ -376,17 +380,17 @@
         private Label label2;
         private PictureBox pictureBox3;
         private LinkLabel linkLabel_admin;
-        private Panel panel4;
-        private PictureBox pictureBox7;
-        private Button button_specialization;
         private Panel panel3;
         private PictureBox pictureBox5;
         private Button button_appointments;
         private Panel panel2;
         private PictureBox pictureBox4;
         private Button button_noOfOperations;
-        private Doctor_Specialization doctor_Specialization1;
-        private Doctor_Operations doctor_Operations1;
-        private Doctor_Appointments doctor_Appointments1;
+        private Doctor_Appointments doctor_Appointments2;
+        private Doctor_Operations doctor_Operations2;
+        private Label label4;
+        private Panel panel1;
+        private LinkLabel linkLabel1;
+        private PictureBox pictureBox6;
     }
 }

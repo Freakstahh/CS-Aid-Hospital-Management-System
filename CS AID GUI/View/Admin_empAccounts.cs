@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSAid_MainWinFormsApp.View
 {
-    public partial class Admin_addDoctor : UserControl
+    public partial class Admin_empAccounts : UserControl
     {
-        public Admin_addDoctor()
+        public Admin_empAccounts()
         {
             InitializeComponent();
         }

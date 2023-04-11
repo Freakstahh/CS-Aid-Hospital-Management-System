@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSAid_MainWinFormsApp.View
 {
-    public partial class Doctor_Specialization : UserControl
+    public partial class Nurse_ViewInventory : UserControl
     {
-        public Doctor_Specialization()
+        public Nurse_ViewInventory()
         {
             InitializeComponent();
         }

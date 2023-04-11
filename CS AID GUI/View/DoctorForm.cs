@@ -29,30 +29,30 @@ namespace CSAid_MainWinFormsApp.View
 
         private void DoctorForm_Load(object sender, EventArgs e)
         {
-            this.doctor_Operations1.Visible = false;
-            this.doctor_Appointments1.Visible = false;
-            this.doctor_Specialization1.Visible = false;
+            this.doctor_Appointments2.Visible = false;
+            this.doctor_Operations2.Visible = false;
         }
 
         private void button_noOfOperations_Click(object sender, EventArgs e)
         {
-            this.doctor_Operations1.Visible = true;
-            this.doctor_Appointments1.Visible = false;
-            this.doctor_Specialization1.Visible = false;
+            this.doctor_Appointments2.Visible = false;
+            this.doctor_Operations2.Visible = true;
         }
 
         private void button_addappointments_Click(object sender, EventArgs e)
         {
-            this.doctor_Operations1.Visible = false;
-            this.doctor_Appointments1.Visible = true;
-            this.doctor_Specialization1.Visible = false;
+            this.doctor_Appointments2.Visible = true;
+            this.doctor_Operations2.Visible = false;
         }
 
-        private void button_addnurse_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
-            this.doctor_Operations1.Visible = false;
-            this.doctor_Appointments1.Visible = false;
-            this.doctor_Specialization1.Visible = true;
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

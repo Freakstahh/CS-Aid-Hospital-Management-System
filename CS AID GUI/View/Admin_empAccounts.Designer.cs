@@ -1,6 +1,6 @@
 ﻿namespace CSAid_MainWinFormsApp.View
 {
-    partial class Admin_addNurse
+    partial class Admin_empAccounts
     {
         /// <summary> 
         /// Required designer variable.
@@ -36,19 +36,19 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(13, 14);
+            label1.Location = new Point(19, 18);
             label1.Name = "label1";
-            label1.Size = new Size(261, 62);
-            label1.TabIndex = 1;
-            label1.Text = "Add Nurse";
+            label1.Size = new Size(457, 62);
+            label1.TabIndex = 2;
+            label1.Text = "Employee Accounts";
             // 
-            // Admin_addNurse
+            // Admin_empAccounts
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
             Controls.Add(label1);
-            Name = "Admin_addNurse";
+            Name = "Admin_empAccounts";
             Size = new Size(1151, 648);
             ResumeLayout(false);
             PerformLayout();

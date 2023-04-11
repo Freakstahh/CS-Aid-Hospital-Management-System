@@ -33,6 +33,9 @@
             label1 = new Label();
             pictureBox2 = new PictureBox();
             panel_upper = new Panel();
+            panel_inventory = new Panel();
+            pictureBox8 = new PictureBox();
+            button_inventory = new Button();
             panel3 = new Panel();
             pictureBox6 = new PictureBox();
             button_departments = new Button();
@@ -52,13 +55,16 @@
             pictureBox3 = new PictureBox();
             linkLabel_admin = new LinkLabel();
             panel_lower = new Panel();
-            nurse_Departments1 = new Nurse_Departments();
-            nurse_Rounds1 = new Nurse_Rounds();
-            nurse_Shifts1 = new Nurse_Shifts();
+            nurse_Shifts2 = new Nurse_Shifts();
+            nurse_Rounds2 = new Nurse_Rounds();
+            nurse_Departments2 = new Nurse_Departments();
+            nurse_ViewInventory1 = new Nurse_ViewInventory();
             panel_upperLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel_upper.SuspendLayout();
+            panel_inventory.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel4.SuspendLayout();
@@ -118,6 +124,7 @@
             // 
             panel_upper.BackColor = Color.FromArgb(33, 33, 33);
             panel_upper.BorderStyle = BorderStyle.Fixed3D;
+            panel_upper.Controls.Add(panel_inventory);
             panel_upper.Controls.Add(panel3);
             panel_upper.Controls.Add(panel4);
             panel_upper.Controls.Add(panel2);
@@ -128,6 +135,40 @@
             panel_upper.Name = "panel_upper";
             panel_upper.Size = new Size(1147, 115);
             panel_upper.TabIndex = 2;
+            // 
+            // panel_inventory
+            // 
+            panel_inventory.Controls.Add(pictureBox8);
+            panel_inventory.Controls.Add(button_inventory);
+            panel_inventory.Dock = DockStyle.Left;
+            panel_inventory.Location = new Point(646, 0);
+            panel_inventory.Name = "panel_inventory";
+            panel_inventory.Size = new Size(107, 111);
+            panel_inventory.TabIndex = 16;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.inventory;
+            pictureBox8.Location = new Point(23, -2);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(59, 44);
+            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox8.TabIndex = 13;
+            pictureBox8.TabStop = false;
+            // 
+            // button_inventory
+            // 
+            button_inventory.BackColor = Color.FromArgb(74, 98, 101);
+            button_inventory.FlatStyle = FlatStyle.Popup;
+            button_inventory.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            button_inventory.ForeColor = SystemColors.Control;
+            button_inventory.Location = new Point(6, 42);
+            button_inventory.Name = "button_inventory";
+            button_inventory.Size = new Size(94, 61);
+            button_inventory.TabIndex = 12;
+            button_inventory.Text = "View Inventory";
+            button_inventory.UseVisualStyleBackColor = false;
+            button_inventory.Click += button_inventory_Click;
             // 
             // panel3
             // 
@@ -339,9 +380,10 @@
             // 
             panel_lower.BackColor = Color.FromArgb(33, 33, 33);
             panel_lower.BorderStyle = BorderStyle.Fixed3D;
-            panel_lower.Controls.Add(nurse_Departments1);
-            panel_lower.Controls.Add(nurse_Rounds1);
-            panel_lower.Controls.Add(nurse_Shifts1);
+            panel_lower.Controls.Add(nurse_Shifts2);
+            panel_lower.Controls.Add(nurse_Rounds2);
+            panel_lower.Controls.Add(nurse_Departments2);
+            panel_lower.Controls.Add(nurse_ViewInventory1);
             panel_lower.Dock = DockStyle.Fill;
             panel_lower.Location = new Point(0, 0);
             panel_lower.Name = "panel_lower";
@@ -349,29 +391,37 @@
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
             // 
-            // nurse_Departments1
+            // nurse_Shifts2
             // 
-            nurse_Departments1.BackColor = Color.FromArgb(33, 33, 33);
-            nurse_Departments1.Location = new Point(-2, 111);
-            nurse_Departments1.Name = "nurse_Departments1";
-            nurse_Departments1.Size = new Size(1147, 503);
-            nurse_Departments1.TabIndex = 2;
+            nurse_Shifts2.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_Shifts2.Location = new Point(-2, 111);
+            nurse_Shifts2.Name = "nurse_Shifts2";
+            nurse_Shifts2.Size = new Size(1147, 503);
+            nurse_Shifts2.TabIndex = 3;
             // 
-            // nurse_Rounds1
+            // nurse_Rounds2
             // 
-            nurse_Rounds1.BackColor = Color.FromArgb(33, 33, 33);
-            nurse_Rounds1.Location = new Point(-2, 111);
-            nurse_Rounds1.Name = "nurse_Rounds1";
-            nurse_Rounds1.Size = new Size(1147, 503);
-            nurse_Rounds1.TabIndex = 1;
+            nurse_Rounds2.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_Rounds2.Location = new Point(-2, 111);
+            nurse_Rounds2.Name = "nurse_Rounds2";
+            nurse_Rounds2.Size = new Size(1147, 503);
+            nurse_Rounds2.TabIndex = 2;
             // 
-            // nurse_Shifts1
+            // nurse_Departments2
             // 
-            nurse_Shifts1.BackColor = Color.FromArgb(33, 33, 33);
-            nurse_Shifts1.Location = new Point(-2, 111);
-            nurse_Shifts1.Name = "nurse_Shifts1";
-            nurse_Shifts1.Size = new Size(1145, 503);
-            nurse_Shifts1.TabIndex = 0;
+            nurse_Departments2.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_Departments2.Location = new Point(-2, 111);
+            nurse_Departments2.Name = "nurse_Departments2";
+            nurse_Departments2.Size = new Size(1145, 503);
+            nurse_Departments2.TabIndex = 1;
+            // 
+            // nurse_ViewInventory1
+            // 
+            nurse_ViewInventory1.BackColor = Color.FromArgb(33, 33, 33);
+            nurse_ViewInventory1.Location = new Point(-2, 109);
+            nurse_ViewInventory1.Name = "nurse_ViewInventory1";
+            nurse_ViewInventory1.Size = new Size(1147, 503);
+            nurse_ViewInventory1.TabIndex = 0;
             // 
             // NurseForm
             // 
@@ -382,12 +432,15 @@
             Controls.Add(panel_lower);
             Name = "NurseForm";
             Text = "CSAid Hospital Management System - Nurse";
+            WindowState = FormWindowState.Maximized;
             Load += NurseForm_Load;
             panel_upperLeft.ResumeLayout(false);
             panel_upperLeft.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel_upper.ResumeLayout(false);
+            panel_inventory.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel4.ResumeLayout(false);
@@ -429,8 +482,12 @@
         private Panel panel1;
         private PictureBox pictureBox5;
         private Button button_rounds;
-        private Nurse_Departments nurse_Departments1;
-        private Nurse_Rounds nurse_Rounds1;
-        private Nurse_Shifts nurse_Shifts1;
+        private Panel panel_inventory;
+        private PictureBox pictureBox8;
+        private Button button_inventory;
+        private Nurse_ViewInventory nurse_ViewInventory1;
+        private Nurse_Shifts nurse_Shifts2;
+        private Nurse_Rounds nurse_Rounds2;
+        private Nurse_Departments nurse_Departments2;
     }
 }

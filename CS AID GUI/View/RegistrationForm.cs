@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CSAid_MainWinFormsApp.View
 {
-    public partial class Admin_addNurse : UserControl
+    public partial class RegistrationForm : Form
     {
-        public Admin_addNurse()
+        public RegistrationForm()
         {
             InitializeComponent();
         }

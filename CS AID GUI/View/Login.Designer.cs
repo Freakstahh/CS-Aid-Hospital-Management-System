@@ -40,6 +40,7 @@
             pictureBoxlogo = new PictureBox();
             labellogin = new Label();
             panel1 = new Panel();
+            linkLabel1 = new LinkLabel();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox_user).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox_key).BeginInit();
@@ -49,6 +50,7 @@
             // 
             // panel2
             // 
+            panel2.Controls.Add(linkLabel1);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(pictureBox_user);
             panel2.Controls.Add(pictureBox_key);
@@ -117,6 +119,7 @@
             textBox_pass.PlaceholderText = "  Enter password . . . ";
             textBox_pass.Size = new Size(389, 27);
             textBox_pass.TabIndex = 3;
+            textBox_pass.TextChanged += textBox_pass_TextChanged;
             // 
             // textBox_username
             // 
@@ -184,6 +187,19 @@
             panel1.TabIndex = 1;
             panel1.Paint += panel1_Paint;
             // 
+            // linkLabel1
+            // 
+            linkLabel1.AutoSize = true;
+            linkLabel1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            linkLabel1.LinkColor = Color.FromArgb(33, 198, 182);
+            linkLabel1.Location = new Point(347, 278);
+            linkLabel1.Name = "linkLabel1";
+            linkLabel1.Size = new Size(114, 20);
+            linkLabel1.TabIndex = 8;
+            linkLabel1.TabStop = true;
+            linkLabel1.Text = "Show Password";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -216,5 +232,6 @@
         private PictureBox pictureBoxlogo;
         private Label labellogin;
         private Panel panel1;
+        private LinkLabel linkLabel1;
     }
 }

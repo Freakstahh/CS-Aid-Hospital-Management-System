@@ -32,31 +32,31 @@ namespace CSAid_MainWinFormsApp.View
 
         private void button_login_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrEmpty(textBox_username.Text) && string.IsNullOrEmpty(textBox_pass.Text))
+            if (string.IsNullOrEmpty(textBox_username.Text) && string.IsNullOrEmpty(textBox_pass.Text))
             {
                 MessageBox.Show("Please enter your username and password");
             }
-            else if(string.IsNullOrEmpty(textBox_username.Text))
+            else if (string.IsNullOrEmpty(textBox_username.Text))
             {
                 MessageBox.Show("Please enter your username");
             }
-            else if(string.IsNullOrEmpty(textBox_pass.Text))
+            else if (string.IsNullOrEmpty(textBox_pass.Text))
             {
                 MessageBox.Show("Please enter your password.");
             }
 
             bool successfulLogin = false;
 
-            foreach(var u in Database.Masterlist())
+            foreach (var u in Database.Masterlist())
             {
-                if(u.CanLogin(textBox_username.Text, textBox_pass.Text))
+                if (u.CanLogin(textBox_username.Text, textBox_pass.Text))
                 {
                     successfulLogin = true;
                     MessageBox.Show($"Welcome, {u.Name} !");
                 }
             }
 
-            if(!successfulLogin) 
+            if (!successfulLogin)
             { MessageBox.Show("The password you've entered is incorrect."); }
 
             /*if (textBox_username.Text == "admin" && textBox_pass.Text == "admin123")
@@ -83,6 +83,23 @@ namespace CSAid_MainWinFormsApp.View
                 textBox_username.Clear();
                 textBox_pass.Clear();
             }*/
+        }
+
+        private void textBox_pass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if(textBox_pass.PasswordChar == '*')
+            {
+                textBox_pass.PasswordChar = '\0';
+            }
+            else if(textBox_pass.PasswordChar == '\0')
+            {
+                textBox_pass.PasswordChar = '*';
+            }
         }
     }
 }
