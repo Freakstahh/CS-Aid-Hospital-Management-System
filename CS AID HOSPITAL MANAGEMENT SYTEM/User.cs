@@ -22,7 +22,7 @@ namespace CS_Aid_Hospital_Management_System
         public string Shifts { get; private set; }
         public string Departments { get; private set; }
         
-        private string UniqueKey;
+        public string UniqueKey { get; set; }
 
         public int State { get; private set; }
         public User(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password, string shifts, string departments, string uniqueKey)
@@ -59,5 +59,8 @@ namespace CS_Aid_Hospital_Management_System
         {
             return username.Equals(this.Username) && password.Equals(this.Password);
         }
+       
+        
     }
+
 }

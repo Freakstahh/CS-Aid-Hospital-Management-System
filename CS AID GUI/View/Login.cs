@@ -53,7 +53,7 @@ namespace CSAid_MainWinFormsApp.View
                 {
                     successfulLogin = true;
                     MessageBox.Show($"Welcome, {u.Name} !");
-                    new AdminForm().Show();
+                    adminForm.Show();
                     textBox_username.Clear();
                     textBox_pass.Clear();
                 }

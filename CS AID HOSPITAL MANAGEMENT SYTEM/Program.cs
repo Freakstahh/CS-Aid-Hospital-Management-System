@@ -4,12 +4,6 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Database.InitializeDatabase();
-
-        Database.Doctors.Clear();
-        Database.SerializeDoctors();
-        Database.UploadDoctorList();
-
         Database.Admins.Clear();
         
         Admin dan = new Admin("00-01", "Dan", "M", DateTime.Now, "123", "@gmail.com", "freakstahhh", "nursing123", "Mornight", "Pag-Ibig", "00");
@@ -19,17 +13,14 @@ public class Program
         Database.SerializeAdmins();
         Database.UploadAdminList();
         
+        //For Testing Only, if Unique Key Works
+        Database.Doctors.Clear();
 
-        /*// wala pa, mag himo pa ug account padung
-        // pag butang pud mo ug checkbox nga "show password"
-        Patient salem = new Patient("Cye", "Salem", "Michael", "Aladdin", 132, 0, -1, 12, DateTime.Now, DateTime.Now);
-        Doctor wakwak = new Doctor("Vicky", "Male", DateTime.Now, 123, "@gmail.com", "darkstar69", "sheeesh", "123", "Mornight", "Philhealth", "Bugos");
+        Doctor rene = new Doctor("01-01", "Renejay de los Reyes", "M", DateTime.Now, "09229390", "sadmirer289@gmail.com", "MyBickIsDig", "IFoccUreMom", "Heart Surgeon", "MTh-8:00 - 11:00 AM", "Emergency", "01");
 
-        wakwak.Patients.Add(salem);
-
-        Database.Doctors.Add(wakwak);
+        Database.Doctors.Add(rene);
 
         Database.SerializeDoctors();
-        Database.UploadDoctorList();*/
+        Database.UploadDoctorList();
     }
 }

@@ -9,7 +9,7 @@ namespace CS_Aid_Hospital_Management_System
     public class Doctor : User
     {
         public string Specialization { get; set; }
-        public List <Patient> Patients { get; set; }
+        internal List <Patient> Patients { get; set; }
 
         // private List<Patient> patients;
 

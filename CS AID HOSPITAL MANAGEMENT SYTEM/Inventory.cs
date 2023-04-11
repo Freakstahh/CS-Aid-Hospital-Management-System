@@ -11,7 +11,7 @@ namespace CS_Aid_Hospital_Management_System
     public class Inventory
     {
         public string Name { get; set; }
-        public List<Item> Items { get; set; }
+        internal List<Item> Items { get; set; }
 
         public Inventory(string name)
         {
