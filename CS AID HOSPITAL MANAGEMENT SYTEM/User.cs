@@ -13,7 +13,7 @@ namespace CS_Aid_Hospital_Management_System
         public string Name { get; private set; }
         public string Gender { get; private set; }
         public DateTime Birthdate { get; private set; }
-        public int ContactNumber { get; private set; }
+        public string ContactNumber { get; private set; }
         public string Email { get; private set; }
         public string Username { get; private set; }
         public string Shifts { get; private set; }
@@ -22,7 +22,7 @@ namespace CS_Aid_Hospital_Management_System
         private string Password;
 
         public int State { get; private set; }
-        public User(string id, string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password, string shifts, string departments)
+        public User(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password, string shifts, string departments)
         {
             this.ID = id;
             this.Name = name;
