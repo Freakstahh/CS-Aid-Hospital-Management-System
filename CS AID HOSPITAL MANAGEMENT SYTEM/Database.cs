@@ -250,6 +250,186 @@ namespace CS_Aid_Hospital_Management_System
             }
         }
 
+        public static void UploadNurseList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v2.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var fileMetadata = new Google.Apis.Drive.v2.Data.File()
+                {
+                    Title = NurseListFileName,
+                    MimeType = "text/plain",
+                    Description = $"Modified at {DateTime.Now} ",
+                    Parents = new List<Google.Apis.Drive.v2.Data.ParentReference>() { new Google.Apis.Drive.v2.Data.ParentReference { Id = directoryID } }
+                };
+
+                byte[] bytes = System.IO.File.ReadAllBytes(NurseListFileName);
+                MemoryStream stream = new MemoryStream(bytes);
+
+                var request = service.Files.Update(fileMetadata, NurseListGoogleDriveFileID, stream, "text/plain");
+                request.Upload();
+
+                Console.WriteLine(AdminListGoogleDriveFileID.Equals(request.ResponseBody.Id) ? "Success" : throw new FileNotFoundException());
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void UploadPatientList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v2.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var fileMetadata = new Google.Apis.Drive.v2.Data.File()
+                {
+                    Title = PatientsListFileName,
+                    MimeType = "text/plain",
+                    Description = $"Modified at {DateTime.Now} ",
+                    Parents = new List<Google.Apis.Drive.v2.Data.ParentReference>() { new Google.Apis.Drive.v2.Data.ParentReference { Id = directoryID } }
+                };
+
+                byte[] bytes = System.IO.File.ReadAllBytes(PatientsListFileName);
+                MemoryStream stream = new MemoryStream(bytes);
+
+                var request = service.Files.Update(fileMetadata, PatientsListGoogleDriveFileID, stream, "text/plain");
+                request.Upload();
+
+                Console.WriteLine(PatientsListGoogleDriveFileID.Equals(request.ResponseBody.Id) ? "Success" : throw new FileNotFoundException());
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void UploadItemList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v2.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var fileMetadata = new Google.Apis.Drive.v2.Data.File()
+                {
+                    Title = ItemListFileName,
+                    MimeType = "text/plain",
+                    Description = $"Modified at {DateTime.Now} ",
+                    Parents = new List<Google.Apis.Drive.v2.Data.ParentReference>() { new Google.Apis.Drive.v2.Data.ParentReference { Id = directoryID } }
+                };
+
+                byte[] bytes = System.IO.File.ReadAllBytes(ItemListFileName);
+                MemoryStream stream = new MemoryStream(bytes);
+
+                var request = service.Files.Update(fileMetadata, ItemListGoogleDriveFileID, stream, "text/plain");
+                request.Upload();
+
+                Console.WriteLine(ItemListGoogleDriveFileID.Equals(request.ResponseBody.Id) ? "Success" : throw new FileNotFoundException());
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void UploadRoomList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v2.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var fileMetadata = new Google.Apis.Drive.v2.Data.File()
+                {
+                    Title = RoomsListFileName,
+                    MimeType = "text/plain",
+                    Description = $"Modified at {DateTime.Now} ",
+                    Parents = new List<Google.Apis.Drive.v2.Data.ParentReference>() { new Google.Apis.Drive.v2.Data.ParentReference { Id = directoryID } }
+                };
+
+                byte[] bytes = System.IO.File.ReadAllBytes(RoomsListFileName);
+                MemoryStream stream = new MemoryStream(bytes);
+
+                var request = service.Files.Update(fileMetadata, RoomsListGoogleDriveFileID, stream, "text/plain");
+                request.Upload();
+
+                Console.WriteLine(RoomsListGoogleDriveFileID.Equals(request.ResponseBody.Id) ? "Success" : throw new FileNotFoundException());
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
         public static void DownloadDoctorList()
         {
             try
@@ -263,6 +443,316 @@ namespace CS_Aid_Hospital_Management_System
                 });
 
                 var request = service.Files.Get(DoctorListGoogleDriveFileID);
+                request.SupportsAllDrives = true;
+                request.MediaDownloader.ProgressChanged +=
+                    progress =>
+                    {
+                        switch (progress.Status)
+                        {
+                            case DownloadStatus.Downloading:
+                                {
+                                    Console.WriteLine(progress.BytesDownloaded);
+                                    break;
+                                }
+                            case DownloadStatus.Completed:
+                                {
+                                    Console.WriteLine("Download complete.");
+                                    break;
+                                }
+                            case DownloadStatus.Failed:
+                                {
+                                    Console.WriteLine("Download failed.");
+                                    break;
+                                }
+                        }
+                    };
+
+                var stream = new MemoryStream();
+                request.Download(stream);
+
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                {
+                    stream.WriteTo(fileStream);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DownloadAdminList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var request = service.Files.Get(AdminListGoogleDriveFileID);
+                request.SupportsAllDrives = true;
+                request.MediaDownloader.ProgressChanged +=
+                    progress =>
+                    {
+                        switch (progress.Status)
+                        {
+                            case DownloadStatus.Downloading:
+                                {
+                                    Console.WriteLine(progress.BytesDownloaded);
+                                    break;
+                                }
+                            case DownloadStatus.Completed:
+                                {
+                                    Console.WriteLine("Download complete.");
+                                    break;
+                                }
+                            case DownloadStatus.Failed:
+                                {
+                                    Console.WriteLine("Download failed.");
+                                    break;
+                                }
+                        }
+                    };
+
+                var stream = new MemoryStream();
+                request.Download(stream);
+
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                {
+                    stream.WriteTo(fileStream);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DownloadNurseList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var request = service.Files.Get(NurseListGoogleDriveFileID);
+                request.SupportsAllDrives = true;
+                request.MediaDownloader.ProgressChanged +=
+                    progress =>
+                    {
+                        switch (progress.Status)
+                        {
+                            case DownloadStatus.Downloading:
+                                {
+                                    Console.WriteLine(progress.BytesDownloaded);
+                                    break;
+                                }
+                            case DownloadStatus.Completed:
+                                {
+                                    Console.WriteLine("Download complete.");
+                                    break;
+                                }
+                            case DownloadStatus.Failed:
+                                {
+                                    Console.WriteLine("Download failed.");
+                                    break;
+                                }
+                        }
+                    };
+
+                var stream = new MemoryStream();
+                request.Download(stream);
+
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                {
+                    stream.WriteTo(fileStream);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DownloadPatientsList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var request = service.Files.Get(PatientsListGoogleDriveFileID);
+                request.SupportsAllDrives = true;
+                request.MediaDownloader.ProgressChanged +=
+                    progress =>
+                    {
+                        switch (progress.Status)
+                        {
+                            case DownloadStatus.Downloading:
+                                {
+                                    Console.WriteLine(progress.BytesDownloaded);
+                                    break;
+                                }
+                            case DownloadStatus.Completed:
+                                {
+                                    Console.WriteLine("Download complete.");
+                                    break;
+                                }
+                            case DownloadStatus.Failed:
+                                {
+                                    Console.WriteLine("Download failed.");
+                                    break;
+                                }
+                        }
+                    };
+
+                var stream = new MemoryStream();
+                request.Download(stream);
+
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                {
+                    stream.WriteTo(fileStream);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DownloadItemList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var request = service.Files.Get(ItemListGoogleDriveFileID);
+                request.SupportsAllDrives = true;
+                request.MediaDownloader.ProgressChanged +=
+                    progress =>
+                    {
+                        switch (progress.Status)
+                        {
+                            case DownloadStatus.Downloading:
+                                {
+                                    Console.WriteLine(progress.BytesDownloaded);
+                                    break;
+                                }
+                            case DownloadStatus.Completed:
+                                {
+                                    Console.WriteLine("Download complete.");
+                                    break;
+                                }
+                            case DownloadStatus.Failed:
+                                {
+                                    Console.WriteLine("Download failed.");
+                                    break;
+                                }
+                        }
+                    };
+
+                var stream = new MemoryStream();
+                request.Download(stream);
+
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                {
+                    stream.WriteTo(fileStream);
+                }
+            }
+            catch (Exception ex)
+            {
+                if (ex is AggregateException)
+                {
+                    Console.WriteLine("Credential not found");
+                }
+                else if (ex is FileNotFoundException)
+                {
+                    Console.WriteLine("File not found");
+                }
+                else
+                {
+                    throw;
+                }
+            }
+        }
+
+        public static void DownloadRoomsList()
+        {
+            try
+            {
+                var credential = GoogleCredential.FromJson(Encoding.UTF8.GetString(Resources.CSAidServiceKey)).CreateScoped(DriveService.Scope.Drive);
+
+                var service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+                {
+                    HttpClientInitializer = credential,
+                    ApplicationName = "Drive API Snippets"
+                });
+
+                var request = service.Files.Get(RoomsListGoogleDriveFileID);
                 request.SupportsAllDrives = true;
                 request.MediaDownloader.ProgressChanged +=
                     progress =>
