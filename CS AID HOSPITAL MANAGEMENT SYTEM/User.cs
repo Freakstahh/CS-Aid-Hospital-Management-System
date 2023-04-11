@@ -16,13 +16,16 @@ namespace CS_Aid_Hospital_Management_System
         public string ContactNumber { get; private set; }
         public string Email { get; private set; }
         public string Username { get; private set; }
-        public string Shifts { get; private set; }
-        public string Departments { get; private set; }
+        
         [JsonRequired]
         private string Password;
+        public string Shifts { get; private set; }
+        public string Departments { get; private set; }
+        
+        private string UniqueKey;
 
         public int State { get; private set; }
-        public User(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password, string shifts, string departments)
+        public User(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password, string shifts, string departments, string uniqueKey)
         {
             this.ID = id;
             this.Name = name;
@@ -35,6 +38,7 @@ namespace CS_Aid_Hospital_Management_System
             this.Shifts = shifts;
             this.State = 0;
             this.Departments = departments;
+            this.UniqueKey = uniqueKey;
         }
         /*public void SignIn()//kung on duty ang doctor
         {

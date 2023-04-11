@@ -8,14 +8,13 @@ namespace CS_Aid_Hospital_Management_System
 {
     public class Admin: User
     {
-        private string UniqueKey;
         public List<Patient> Patients = new List<Patient>();
         public List<Doctor> Doctors = new List<Doctor>();
         public List <Nurse> Nurses = new List<Nurse>();
 
-        public Admin(string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password,string shifts,string departments, string iD, string uniqueKey): base(iD,name, gender, birthdate, contactNumber, email, username, password, shifts, departments)
+        public Admin(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password,string shifts,string departments, string uniqueKey): base(id,name, gender, birthdate, contactNumber, email, username, password, shifts, departments, uniqueKey)
         {
-            this.UniqueKey = uniqueKey;
+
         }
         public void addPatient(Patient patient, Building building, int floorNum, int roomNum)
         {
