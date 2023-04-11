@@ -7,6 +7,16 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CS Aid Hospital Management 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSAid_MainWinFormsApp", "CS AID GUI\CSAid_MainWinFormsApp.csproj", "{AED441DF-B532-4623-A1F3-8196980CA757}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdminNUnitTest", "AdminNUnitTest\AdminNUnitTest.csproj", "{CF3F2958-3515-47D6-9BBE-043372D9CED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryNUnitTest", "InventoryNUnitTest\InventoryNUnitTest.csproj", "{A97C3EA0-EF7B-4794-BB02-9F6A9D1CA40E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ItemNUnitTest", "ItemNUnitTest\ItemNUnitTest.csproj", "{ADDC0288-E9F7-4425-8CAB-64DC32006679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomNUnitTest", "RoomNUnitTest\RoomNUnitTest.csproj", "{6052F7B2-3341-482B-8CA0-8996AEE4B580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppointmentNUnitTest", "AppointmentNUnitTest\AppointmentNUnitTest.csproj", "{DC1747BF-DD1F-4EA3-8F7E-0E7B02F1FF68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +31,26 @@ Global
 		{AED441DF-B532-4623-A1F3-8196980CA757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AED441DF-B532-4623-A1F3-8196980CA757}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AED441DF-B532-4623-A1F3-8196980CA757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3F2958-3515-47D6-9BBE-043372D9CED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3F2958-3515-47D6-9BBE-043372D9CED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3F2958-3515-47D6-9BBE-043372D9CED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3F2958-3515-47D6-9BBE-043372D9CED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A97C3EA0-EF7B-4794-BB02-9F6A9D1CA40E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A97C3EA0-EF7B-4794-BB02-9F6A9D1CA40E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A97C3EA0-EF7B-4794-BB02-9F6A9D1CA40E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A97C3EA0-EF7B-4794-BB02-9F6A9D1CA40E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADDC0288-E9F7-4425-8CAB-64DC32006679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADDC0288-E9F7-4425-8CAB-64DC32006679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADDC0288-E9F7-4425-8CAB-64DC32006679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADDC0288-E9F7-4425-8CAB-64DC32006679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6052F7B2-3341-482B-8CA0-8996AEE4B580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6052F7B2-3341-482B-8CA0-8996AEE4B580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6052F7B2-3341-482B-8CA0-8996AEE4B580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6052F7B2-3341-482B-8CA0-8996AEE4B580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC1747BF-DD1F-4EA3-8F7E-0E7B02F1FF68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC1747BF-DD1F-4EA3-8F7E-0E7B02F1FF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC1747BF-DD1F-4EA3-8F7E-0E7B02F1FF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC1747BF-DD1F-4EA3-8F7E-0E7B02F1FF68}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
