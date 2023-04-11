@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="CS_Aid_Hospital_Management_System.Admin">
-    <Position X="9.25" Y="5.25" Width="1.5" />
+    <Position X="9.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAACAAAACAIAAAgAAAABAB0AAAAAAAAA=</HashCode>
       <FileName>Admin.cs</FileName>
@@ -13,14 +13,14 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Appointment">
-    <Position X="6" Y="2.5" Width="1.5" />
+    <Position X="10" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAAAIAAAAAAAAEIEAAAAAAA=</HashCode>
       <FileName>Appointment.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.AppointmentScheduler">
-    <Position X="4" Y="1" Width="1.5" />
+    <Position X="7.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
       <FileName>AppointmentScheduler.cs</FileName>
@@ -30,7 +30,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Building">
-    <Position X="5" Y="5.25" Width="1.5" />
+    <Position X="6.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AACAAAAAAAAAAAAAAAAAAAACAEAAIAgAAAAAAAAAAAA=</HashCode>
       <FileName>Building.cs</FileName>
@@ -40,14 +40,22 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Database">
-    <Position X="2" Y="1" Width="1.5" />
+    <Position X="13" Y="7.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAgAAAAAAAECACAAgAAEQADAAEAAEIgBhEAIAAAABI=</HashCode>
       <FileName>Database.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Admins" />
+      <Field Name="Doctors" />
+      <Field Name="Items" />
+      <Field Name="Nurse" />
+      <Field Name="Patients" />
+      <Field Name="Rooms" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Doctor">
-    <Position X="14.25" Y="5.25" Width="1.5" />
+    <Position X="15.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAEA=</HashCode>
       <FileName>Doctor.cs</FileName>
@@ -57,7 +65,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Inventory">
-    <Position X="7.75" Y="1" Width="1.5" />
+    <Position X="8" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAACAAEAACAAAYAIAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>Inventory.cs</FileName>
@@ -67,14 +75,20 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Item">
-    <Position X="10" Y="1" Width="1.5" />
+    <Position X="10.25" Y="8.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAAAA=</HashCode>
       <FileName>Item.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Nurse">
-    <Position X="12" Y="5.25" Width="1.5" />
+    <Position X="12" Y="5" Width="1.5" />
+    <InheritanceLine Type="CS_Aid_Hospital_Management_System.User" FixedToPoint="true">
+      <Path>
+        <Point X="12.75" Y="4.43" />
+        <Point X="12.75" Y="5" />
+      </Path>
+    </InheritanceLine>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Nurse.cs</FileName>
@@ -84,21 +98,21 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Patient">
-    <Position X="17" Y="4.75" Width="1.5" />
+    <Position X="17.5" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAEAAAAAAABAAAAAQJASAAAAAAABAAAABAAAAAAg=</HashCode>
       <FileName>Patient.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Room">
-    <Position X="7.25" Y="5.25" Width="1.5" />
+    <Position X="6.25" Y="5.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAACAAAAIAQAAAAAAAAABAABBAAAAAA=</HashCode>
       <FileName>Room.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CS_Aid_Hospital_Management_System.Timeslot">
-    <Position X="4" Y="3" Width="1.5" />
+    <Position X="8.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAIAABAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Timeslot.cs</FileName>
