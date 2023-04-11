@@ -13,7 +13,7 @@ namespace CS_Aid_Hospital_Management_System
         public List<Doctor> Doctors = new List<Doctor>();
         public List <Nurse> Nurses = new List<Nurse>();
 
-        public Admin(string name, string gender, DateTime birthdate, int contactNumber, string email, string username, string password,string shifts,string departments, string iD, string uniqueKey): base(iD,name, gender, birthdate, contactNumber, email, username, password, shifts, departments)
+        public Admin(string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password,string shifts,string departments, string iD, string uniqueKey): base(iD,name, gender, birthdate, contactNumber, email, username, password, shifts, departments)
         {
             this.UniqueKey = uniqueKey;
         }

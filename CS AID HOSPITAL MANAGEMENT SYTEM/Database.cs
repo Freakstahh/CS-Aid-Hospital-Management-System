@@ -47,7 +47,7 @@ namespace CS_Aid_Hospital_Management_System
             List<User> Masterlist = new List<User>();
             Masterlist.AddRange(Doctors);
             // Masterlist.AddRange(Nurse);
-            // Masterlist.AddRange(Admin);
+            Masterlist.AddRange(Admins);
 
             return Masterlist;
         }
@@ -878,6 +878,10 @@ namespace CS_Aid_Hospital_Management_System
             patientListQuery.Q = $"name = '{PatientsListFileName}' and '{directoryID}' in parents";
             var patientList = patientListQuery.Execute();
 
+            var adminListQuery = service.Files.List();
+            adminListQuery.Q = $"name = '{AdminListFileName}' and '{directoryID}' in parents";
+            var adminList = patientListQuery.Execute();
+
             /*var nurseListQuery = service.Files.List();
             nurseListQuery.Q = $"name = '{"NurseRecord.csaid"}' and '{directoryID}' in parents";
             var nurseList = nurseListQuery.Execute();*/
@@ -890,6 +894,9 @@ namespace CS_Aid_Hospital_Management_System
             if (patientList.Files.Count == 0)
                 throw new FileNotFoundException("Error: Online database does not contain the patient records masterlist");
 
+            if (adminList.Files.Count == 0)
+                throw new FileNotFoundException("Error: Online database does not contain the patient records masterlist");
+
             /*if(nurseList.Files.Count == 0)
                 throw new FileNotFoundException("Error: Online database does not contain the nurse records masterlist");*/
 
@@ -897,6 +904,9 @@ namespace CS_Aid_Hospital_Management_System
 
             DownloadDoctorList();
             DeserializeDoctors();
+
+            DownloadAdminList();
+            DeserializeAdmins();
 
             // DownloadPatientList();
             // DeserializePatients();

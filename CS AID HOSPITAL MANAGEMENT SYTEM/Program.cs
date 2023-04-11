@@ -12,7 +12,7 @@ public class Program
 
         Database.Admins.Clear();
         
-        Admin dan = new Admin("Dan", "M", DateTime.Now, 123, "@gmail.com", "freakstahhh", "nursing123", "Mornight", "Pag-Ibig", "00-01", "00");
+        Admin dan = new Admin("Dan", "M", DateTime.Now, "123", "@gmail.com", "freakstahhh", "nursing123", "Mornight", "Pag-Ibig", "00-01", "00");
 
         Database.Admins.Add(dan);
 
