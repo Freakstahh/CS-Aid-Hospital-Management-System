@@ -28,6 +28,10 @@ namespace CS_Aid_Hospital_Management_System
 
         public static List<Doctor> Doctors = new List<Doctor>();
         public static List<Patient> Patients = new List<Patient>();
+        public static List<Nurse> Nurse = new List<Nurse>();
+        public static List<Admin> Admins = new List<Admin>();
+        public static List<Item> Items = new List<Item>();
+        public static List<Room> Rooms = new List<Room>();
 
         public static List<User> Masterlist()
         {

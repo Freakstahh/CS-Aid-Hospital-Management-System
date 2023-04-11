@@ -36,7 +36,7 @@ namespace CS_Aid_Hospital_Management_System
             this.State = 0;
             this.Departments = departments;
         }
-        public void SignIn()//kung on duty ang doctor
+        /*public void SignIn()//kung on duty ang doctor
         {
             if (this.State == 0)
                 this.State = 1;
@@ -49,7 +49,7 @@ namespace CS_Aid_Hospital_Management_System
                 this.State = 0;
             else
                 return;
-        }
+        }*/
 
         public bool CanLogin(string username, string password)
         {
