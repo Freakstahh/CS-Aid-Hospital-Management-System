@@ -77,7 +77,7 @@ C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinForms
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Admin_Inventory.resources
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Doctor_Appointments.resources
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Doctor_Operations.resources
-C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Doctor_Specialization.resources
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Nurse_Departments.resources
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Nurse_Rounds.resources
 C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Nurse_Shifts.resources
+C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\obj\Debug\net6.0-windows\CSAid_MainWinFormsApp.View.Nurse_ViewInventory.resources

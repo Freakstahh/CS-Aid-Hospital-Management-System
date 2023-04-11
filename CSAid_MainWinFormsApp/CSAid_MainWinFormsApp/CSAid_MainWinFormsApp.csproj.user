@@ -31,9 +31,6 @@
     <Compile Update="View\Doctor_Operations.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Update="View\Doctor_Specialization.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
     <Compile Update="View\Login.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -50,6 +47,9 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Nurse_Shifts.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="View\Nurse_ViewInventory.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="View\Register.cs">

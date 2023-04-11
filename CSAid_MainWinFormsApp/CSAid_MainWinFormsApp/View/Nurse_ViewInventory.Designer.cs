@@ -1,6 +1,6 @@
 ﻿namespace CSAid_MainWinFormsApp.View
 {
-    partial class Doctor_Specialization
+    partial class Nurse_ViewInventory
     {
         /// <summary> 
         /// Required designer variable.
@@ -36,20 +36,20 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 28.2F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.WhiteSmoke;
-            label1.Location = new Point(18, 20);
+            label1.Location = new Point(20, 21);
             label1.Name = "label1";
-            label1.Size = new Size(330, 62);
-            label1.TabIndex = 2;
-            label1.Text = "Specialization";
+            label1.Size = new Size(241, 62);
+            label1.TabIndex = 3;
+            label1.Text = "Inventory";
             // 
-            // Doctor_Specialization
+            // Nurse_ViewInventory
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
             Controls.Add(label1);
-            Name = "Doctor_Specialization";
-            Size = new Size(1151, 650);
+            Name = "Nurse_ViewInventory";
+            Size = new Size(1151, 648);
             ResumeLayout(false);
             PerformLayout();
         }

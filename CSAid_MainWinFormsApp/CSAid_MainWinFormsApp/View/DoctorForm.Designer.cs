@@ -29,13 +29,9 @@
         private void InitializeComponent()
         {
             panel_lower = new Panel();
-            doctor_Specialization1 = new Doctor_Specialization();
             doctor_Operations1 = new Doctor_Operations();
             doctor_Appointments1 = new Doctor_Appointments();
             panel_upper = new Panel();
-            panel4 = new Panel();
-            pictureBox7 = new PictureBox();
-            button_specialization = new Button();
             panel3 = new Panel();
             pictureBox5 = new PictureBox();
             button_appointments = new Button();
@@ -54,8 +50,6 @@
             linkLabel_admin = new LinkLabel();
             panel_lower.SuspendLayout();
             panel_upper.SuspendLayout();
-            panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel2.SuspendLayout();
@@ -71,7 +65,6 @@
             // 
             panel_lower.BackColor = Color.FromArgb(33, 33, 33);
             panel_lower.BorderStyle = BorderStyle.Fixed3D;
-            panel_lower.Controls.Add(doctor_Specialization1);
             panel_lower.Controls.Add(doctor_Operations1);
             panel_lower.Controls.Add(doctor_Appointments1);
             panel_lower.Dock = DockStyle.Fill;
@@ -80,14 +73,6 @@
             panel_lower.Size = new Size(1147, 501);
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
-            // 
-            // doctor_Specialization1
-            // 
-            doctor_Specialization1.BackColor = Color.FromArgb(33, 33, 33);
-            doctor_Specialization1.Location = new Point(-2, -4);
-            doctor_Specialization1.Name = "doctor_Specialization1";
-            doctor_Specialization1.Size = new Size(1147, 503);
-            doctor_Specialization1.TabIndex = 2;
             // 
             // doctor_Operations1
             // 
@@ -109,7 +94,6 @@
             // 
             panel_upper.BackColor = Color.FromArgb(33, 33, 33);
             panel_upper.BorderStyle = BorderStyle.Fixed3D;
-            panel_upper.Controls.Add(panel4);
             panel_upper.Controls.Add(panel3);
             panel_upper.Controls.Add(panel2);
             panel_upper.Controls.Add(panel_upperLeft);
@@ -119,40 +103,6 @@
             panel_upper.Name = "panel_upper";
             panel_upper.Size = new Size(1147, 115);
             panel_upper.TabIndex = 2;
-            // 
-            // panel4
-            // 
-            panel4.Controls.Add(pictureBox7);
-            panel4.Controls.Add(button_specialization);
-            panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(550, 0);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(147, 111);
-            panel4.TabIndex = 13;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.stethoscope;
-            pictureBox7.Location = new Point(45, 0);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(59, 44);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 13;
-            pictureBox7.TabStop = false;
-            // 
-            // button_specialization
-            // 
-            button_specialization.BackColor = Color.FromArgb(74, 98, 101);
-            button_specialization.FlatStyle = FlatStyle.Popup;
-            button_specialization.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button_specialization.ForeColor = SystemColors.Control;
-            button_specialization.Location = new Point(6, 43);
-            button_specialization.Name = "button_specialization";
-            button_specialization.Size = new Size(134, 61);
-            button_specialization.TabIndex = 10;
-            button_specialization.Text = "Specialization";
-            button_specialization.UseVisualStyleBackColor = false;
-            button_specialization.Click += button_addnurse_Click;
             // 
             // panel3
             // 
@@ -346,8 +296,6 @@
             Load += DoctorForm_Load;
             panel_lower.ResumeLayout(false);
             panel_upper.ResumeLayout(false);
-            panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel2.ResumeLayout(false);
@@ -376,16 +324,12 @@
         private Label label2;
         private PictureBox pictureBox3;
         private LinkLabel linkLabel_admin;
-        private Panel panel4;
-        private PictureBox pictureBox7;
-        private Button button_specialization;
         private Panel panel3;
         private PictureBox pictureBox5;
         private Button button_appointments;
         private Panel panel2;
         private PictureBox pictureBox4;
         private Button button_noOfOperations;
-        private Doctor_Specialization doctor_Specialization1;
         private Doctor_Operations doctor_Operations1;
         private Doctor_Appointments doctor_Appointments1;
     }

@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CSAid_MainWinFormsApp
-build_property.ProjectDir = C:\Users\nethk\Source\Repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\
+build_property.ProjectDir = C:\Users\nethk\source\repos\CS-Aid-Hospital-Management-System\CSAid_MainWinFormsApp\CSAid_MainWinFormsApp\
