@@ -12,10 +12,12 @@ namespace CS_Aid_Hospital_Management_System
         internal List<Doctor> Doctors = new List<Doctor>();
         internal List <Nurse> Nurses = new List<Nurse>();
 
-        public Admin(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password,string shifts,string departments, string uniqueKey): base(id,name, gender, birthdate, contactNumber, email, username, password, shifts, departments, uniqueKey)
+        public Admin(string id, string name, string gender, DateTime birthdate, string contactNumber, string email, string username, string password, string shifts, string departments, string uniqueKey) : base(id,name, gender, birthdate, contactNumber, email, username, password, shifts, departments, uniqueKey)
         {
-
+     
         }
+
+
         public void addPatient(Patient patient, Building building, int floorNum, int roomNum)
         {
             if (!Patients.Contains(patient) && building.AddPatient(floorNum, roomNum))
