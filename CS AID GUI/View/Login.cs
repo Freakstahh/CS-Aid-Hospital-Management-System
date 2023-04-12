@@ -15,6 +15,7 @@ namespace CSAid_MainWinFormsApp.View
     {
 
         public static AdminForm adminForm = new AdminForm();
+        public static DoctorForm doctorForm = new DoctorForm();
         public Login()
         {
             InitializeComponent();
@@ -47,15 +48,23 @@ namespace CSAid_MainWinFormsApp.View
 
             bool successfulLogin = false;
 
-            foreach (var u in Database.Masterlist())
+            foreach (User u in Database.Masterlist())
             {
-                if (u.CanLogin(textBox_username.Text, textBox_pass.Text))
+                if (!u.CanLogin(textBox_username.Text, textBox_pass.Text))
+                    continue;
+
+                successfulLogin = true;
+                this.Hide();
+
+                if (u is Doctor)
                 {
-                    successfulLogin = true;
-                    MessageBox.Show($"Welcome, {u.Name} !");
+                    doctorForm.Show();
+                    break;
+                }
+                else if (u is Admin)
+                {
                     adminForm.Show();
-                    textBox_username.Clear();
-                    textBox_pass.Clear();
+                    break;
                 }
             }
 
@@ -95,11 +104,11 @@ namespace CSAid_MainWinFormsApp.View
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            if(textBox_pass.PasswordChar == '*')
+            if (textBox_pass.PasswordChar == '*')
             {
                 textBox_pass.PasswordChar = '\0';
             }
-            else if(textBox_pass.PasswordChar == '\0')
+            else if (textBox_pass.PasswordChar == '\0')
             {
                 textBox_pass.PasswordChar = '*';
             }
