@@ -62,7 +62,7 @@ namespace CS_Aid_Hospital_Management_System
 
         public static void DeserializeDoctors()
         {
-            string encryptedContents = File.ReadAllText(DoctorListFileName);
+            string encryptedContents = File.ReadAllText(Path.Combine(downloadPath, DoctorListFileName));
             string decryptedContents = encryptDecrypt(encryptedContents);
 
             Doctors = JsonConvert.DeserializeObject<List<Doctor>>(decryptedContents);
@@ -532,7 +532,7 @@ namespace CS_Aid_Hospital_Management_System
                 var stream = new MemoryStream();
                 request.Download(stream);
 
-                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, AdminListFileName), FileMode.Create, FileAccess.Write))
                 {
                     stream.WriteTo(fileStream);
                 }
@@ -880,7 +880,7 @@ namespace CS_Aid_Hospital_Management_System
 
             var adminListQuery = service.Files.List();
             adminListQuery.Q = $"name = '{AdminListFileName}' and '{directoryID}' in parents";
-            var adminList = patientListQuery.Execute();
+            var adminList = adminListQuery.Execute();
 
             /*var nurseListQuery = service.Files.List();
             nurseListQuery.Q = $"name = '{"NurseRecord.csaid"}' and '{directoryID}' in parents";
