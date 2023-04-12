@@ -60,11 +60,11 @@
             pictureBox3 = new PictureBox();
             linkLabel_admin = new LinkLabel();
             panel_lower = new Panel();
+            admin_empAccounts1 = new Admin_empAccounts();
             admin_Inventory1 = new Admin_Inventory();
             admin_availableRooms1 = new Admin_availableRooms();
             admin_addAppointment1 = new Admin_addAppointment();
             admin_addPatient1 = new Admin_addPatient();
-            admin_empAccounts1 = new Admin_empAccounts();
             panel_upper.SuspendLayout();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -100,7 +100,7 @@
             panel_upper.Dock = DockStyle.Top;
             panel_upper.Location = new Point(0, 0);
             panel_upper.Name = "panel_upper";
-            panel_upper.Size = new Size(1151, 115);
+            panel_upper.Size = new Size(1902, 115);
             panel_upper.TabIndex = 0;
             // 
             // panel6
@@ -380,7 +380,7 @@
             panel_upperRight.Controls.Add(pictureBox3);
             panel_upperRight.Controls.Add(linkLabel_admin);
             panel_upperRight.Dock = DockStyle.Right;
-            panel_upperRight.Location = new Point(897, 0);
+            panel_upperRight.Location = new Point(1648, 0);
             panel_upperRight.Name = "panel_upperRight";
             panel_upperRight.Size = new Size(250, 111);
             panel_upperRight.TabIndex = 7;
@@ -454,16 +454,24 @@
             panel_lower.Controls.Add(admin_addPatient1);
             panel_lower.Location = new Point(0, 115);
             panel_lower.Name = "panel_lower";
-            panel_lower.Size = new Size(1151, 650);
+            panel_lower.Size = new Size(1902, 918);
             panel_lower.TabIndex = 1;
             panel_lower.Paint += panel_lower_Paint;
+            // 
+            // admin_empAccounts1
+            // 
+            admin_empAccounts1.BackColor = Color.FromArgb(33, 33, 33);
+            admin_empAccounts1.Location = new Point(-2, -2);
+            admin_empAccounts1.Name = "admin_empAccounts1";
+            admin_empAccounts1.Size = new Size(1902, 918);
+            admin_empAccounts1.TabIndex = 6;
             // 
             // admin_Inventory1
             // 
             admin_Inventory1.BackColor = Color.FromArgb(33, 33, 33);
             admin_Inventory1.Location = new Point(-2, -2);
             admin_Inventory1.Name = "admin_Inventory1";
-            admin_Inventory1.Size = new Size(1151, 650);
+            admin_Inventory1.Size = new Size(1902, 918);
             admin_Inventory1.TabIndex = 5;
             // 
             // admin_availableRooms1
@@ -471,7 +479,7 @@
             admin_availableRooms1.BackColor = Color.FromArgb(33, 33, 33);
             admin_availableRooms1.Location = new Point(-2, -2);
             admin_availableRooms1.Name = "admin_availableRooms1";
-            admin_availableRooms1.Size = new Size(1149, 650);
+            admin_availableRooms1.Size = new Size(1902, 918);
             admin_availableRooms1.TabIndex = 4;
             // 
             // admin_addAppointment1
@@ -479,7 +487,7 @@
             admin_addAppointment1.BackColor = Color.FromArgb(33, 33, 33);
             admin_addAppointment1.Location = new Point(-2, -2);
             admin_addAppointment1.Name = "admin_addAppointment1";
-            admin_addAppointment1.Size = new Size(1151, 650);
+            admin_addAppointment1.Size = new Size(1902, 918);
             admin_addAppointment1.TabIndex = 1;
             // 
             // admin_addPatient1
@@ -487,23 +495,15 @@
             admin_addPatient1.BackColor = Color.FromArgb(33, 33, 33);
             admin_addPatient1.Location = new Point(-2, -2);
             admin_addPatient1.Name = "admin_addPatient1";
-            admin_addPatient1.Size = new Size(1151, 648);
+            admin_addPatient1.Size = new Size(1902, 918);
             admin_addPatient1.TabIndex = 0;
-            // 
-            // admin_empAccounts1
-            // 
-            admin_empAccounts1.BackColor = Color.FromArgb(33, 33, 33);
-            admin_empAccounts1.Location = new Point(-2, -2);
-            admin_empAccounts1.Name = "admin_empAccounts1";
-            admin_empAccounts1.Size = new Size(1151, 650);
-            admin_empAccounts1.TabIndex = 6;
             // 
             // AdminForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(1151, 765);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panel_lower);
             Controls.Add(panel_upper);
             Name = "AdminForm";

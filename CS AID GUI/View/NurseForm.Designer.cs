@@ -133,7 +133,7 @@
             panel_upper.Dock = DockStyle.Top;
             panel_upper.Location = new Point(0, 0);
             panel_upper.Name = "panel_upper";
-            panel_upper.Size = new Size(1147, 115);
+            panel_upper.Size = new Size(1902, 115);
             panel_upper.TabIndex = 2;
             // 
             // panel_inventory
@@ -314,7 +314,7 @@
             panel_upperRight.Controls.Add(pictureBox3);
             panel_upperRight.Controls.Add(linkLabel_admin);
             panel_upperRight.Dock = DockStyle.Right;
-            panel_upperRight.Location = new Point(893, 0);
+            panel_upperRight.Location = new Point(1648, 0);
             panel_upperRight.Name = "panel_upperRight";
             panel_upperRight.Size = new Size(250, 111);
             panel_upperRight.TabIndex = 7;
@@ -387,7 +387,7 @@
             panel_lower.Dock = DockStyle.Fill;
             panel_lower.Location = new Point(0, 0);
             panel_lower.Name = "panel_lower";
-            panel_lower.Size = new Size(1147, 616);
+            panel_lower.Size = new Size(1902, 1033);
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
             // 
@@ -396,7 +396,7 @@
             nurse_Shifts2.BackColor = Color.FromArgb(33, 33, 33);
             nurse_Shifts2.Location = new Point(-2, 111);
             nurse_Shifts2.Name = "nurse_Shifts2";
-            nurse_Shifts2.Size = new Size(1147, 503);
+            nurse_Shifts2.Size = new Size(1902, 918);
             nurse_Shifts2.TabIndex = 3;
             // 
             // nurse_Rounds2
@@ -404,7 +404,7 @@
             nurse_Rounds2.BackColor = Color.FromArgb(33, 33, 33);
             nurse_Rounds2.Location = new Point(-2, 111);
             nurse_Rounds2.Name = "nurse_Rounds2";
-            nurse_Rounds2.Size = new Size(1147, 503);
+            nurse_Rounds2.Size = new Size(1902, 918);
             nurse_Rounds2.TabIndex = 2;
             // 
             // nurse_Departments2
@@ -412,7 +412,7 @@
             nurse_Departments2.BackColor = Color.FromArgb(33, 33, 33);
             nurse_Departments2.Location = new Point(-2, 111);
             nurse_Departments2.Name = "nurse_Departments2";
-            nurse_Departments2.Size = new Size(1145, 503);
+            nurse_Departments2.Size = new Size(1902, 918);
             nurse_Departments2.TabIndex = 1;
             // 
             // nurse_ViewInventory1
@@ -420,14 +420,14 @@
             nurse_ViewInventory1.BackColor = Color.FromArgb(33, 33, 33);
             nurse_ViewInventory1.Location = new Point(-2, 109);
             nurse_ViewInventory1.Name = "nurse_ViewInventory1";
-            nurse_ViewInventory1.Size = new Size(1147, 503);
+            nurse_ViewInventory1.Size = new Size(1902, 918);
             nurse_ViewInventory1.TabIndex = 0;
             // 
             // NurseForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1147, 616);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panel_upper);
             Controls.Add(panel_lower);
             Name = "NurseForm";

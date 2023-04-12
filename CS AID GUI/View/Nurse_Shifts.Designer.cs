@@ -49,7 +49,7 @@
             BackColor = Color.FromArgb(33, 33, 33);
             Controls.Add(label1);
             Name = "Nurse_Shifts";
-            Size = new Size(1151, 648);
+            Size = new Size(1902, 918);
             ResumeLayout(false);
             PerformLayout();
         }

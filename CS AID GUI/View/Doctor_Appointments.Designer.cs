@@ -49,7 +49,7 @@
             BackColor = Color.FromArgb(33, 33, 33);
             Controls.Add(label1);
             Name = "Doctor_Appointments";
-            Size = new Size(1151, 650);
+            Size = new Size(1902, 918);
             ResumeLayout(false);
             PerformLayout();
         }

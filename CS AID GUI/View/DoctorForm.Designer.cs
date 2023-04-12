@@ -76,7 +76,7 @@
             panel_lower.Dock = DockStyle.Fill;
             panel_lower.Location = new Point(0, 115);
             panel_lower.Name = "panel_lower";
-            panel_lower.Size = new Size(1260, 501);
+            panel_lower.Size = new Size(1902, 918);
             panel_lower.TabIndex = 3;
             panel_lower.Paint += panel_lower_Paint;
             // 
@@ -85,7 +85,7 @@
             doctor_Appointments2.BackColor = Color.FromArgb(33, 33, 33);
             doctor_Appointments2.Location = new Point(-2, -2);
             doctor_Appointments2.Name = "doctor_Appointments2";
-            doctor_Appointments2.Size = new Size(1260, 501);
+            doctor_Appointments2.Size = new Size(1902, 918);
             doctor_Appointments2.TabIndex = 1;
             // 
             // doctor_Operations2
@@ -93,7 +93,7 @@
             doctor_Operations2.BackColor = Color.FromArgb(33, 33, 33);
             doctor_Operations2.Location = new Point(-2, -4);
             doctor_Operations2.Name = "doctor_Operations2";
-            doctor_Operations2.Size = new Size(1147, 503);
+            doctor_Operations2.Size = new Size(1902, 918);
             doctor_Operations2.TabIndex = 0;
             // 
             // panel_upper
@@ -108,7 +108,7 @@
             panel_upper.Dock = DockStyle.Top;
             panel_upper.Location = new Point(0, 0);
             panel_upper.Name = "panel_upper";
-            panel_upper.Size = new Size(1260, 115);
+            panel_upper.Size = new Size(1902, 115);
             panel_upper.TabIndex = 2;
             // 
             // panel1
@@ -117,7 +117,7 @@
             panel1.Controls.Add(linkLabel1);
             panel1.Controls.Add(label4);
             panel1.Dock = DockStyle.Right;
-            panel1.Location = new Point(756, 0);
+            panel1.Location = new Point(1398, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(250, 111);
             panel1.TabIndex = 15;
@@ -274,7 +274,7 @@
             panel_upperRight.Controls.Add(pictureBox3);
             panel_upperRight.Controls.Add(linkLabel_admin);
             panel_upperRight.Dock = DockStyle.Right;
-            panel_upperRight.Location = new Point(1006, 0);
+            panel_upperRight.Location = new Point(1648, 0);
             panel_upperRight.Name = "panel_upperRight";
             panel_upperRight.Size = new Size(250, 111);
             panel_upperRight.TabIndex = 7;
@@ -340,7 +340,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1260, 616);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panel_lower);
             Controls.Add(panel_upper);
             Name = "DoctorForm";

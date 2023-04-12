@@ -16,7 +16,6 @@ namespace CSAid_MainWinFormsApp
             ApplicationConfiguration.Initialize();
             Database.InitializeDatabase();
             Application.Run(new LoginView());
-
         }
     }
 }
