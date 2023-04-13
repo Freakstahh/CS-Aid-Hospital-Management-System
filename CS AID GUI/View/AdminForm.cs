@@ -36,11 +36,6 @@ namespace CSAid_MainWinFormsApp.View
 
         }
 
-        private void logout_button_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void button_addPatient_Click(object sender, EventArgs e)
         {
             this.admin_addPatient1.Visible = true;
@@ -93,6 +88,11 @@ namespace CSAid_MainWinFormsApp.View
             this.admin_empAccounts1.Visible = false;
             this.admin_Inventory1.Visible = false;
             this.admin_availableRooms1.Visible = true;
+        }
+
+        private void logout_button_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

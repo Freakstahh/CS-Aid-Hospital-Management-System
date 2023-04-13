@@ -15,10 +15,10 @@ namespace CS_Aid_Hospital_Management_System
         public int Patient_Id { get; set; }
         public int FloorNumber { get; set; }
         public int RoomNumber { get; set; }
-        public int Bills { get; set; }
+        //public int Bills { get; set; }
         public DateTime AdmitDate { get; set; }
         public DateTime Birthdate { get; set; }
-        public Patient(string lastname, string firstname, string middleName, string diagnosis, int patient_Id, int floorNumber, int roomNumber, int bills ,DateTime admitDate, DateTime birthdate)
+        public Patient(string lastname, string firstname, string middleName, string diagnosis, int patient_Id, int floorNumber, int roomNumber, DateTime admitDate, DateTime birthdate)
         {
             this.LastName = lastname;
             this.FirstName = firstname;
@@ -27,7 +27,7 @@ namespace CS_Aid_Hospital_Management_System
             this.Patient_Id = patient_Id;
             this.FloorNumber = floorNumber;
             this.RoomNumber = roomNumber;
-            this.Bills = bills;
+            //this.Bills = bills;
             this.AdmitDate = admitDate;
             this.Birthdate = birthdate;
         }
