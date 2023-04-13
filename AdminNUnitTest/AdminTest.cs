@@ -19,7 +19,7 @@ namespace AdminNUnitTest
 
             // Assert
             Assert.AreEqual(initialCount + 1, admin.CountNumberOfPatients());
-            Assert.IsTrue(admin.Patients.Contains(patient));
+            Assert.IsTrue(admin.patients.Contains(patient));
             Assert.AreEqual(1, building.Rooms[0].State);
         }
 
@@ -38,7 +38,7 @@ namespace AdminNUnitTest
 
             // Assert
             Assert.AreEqual(initialCount - 1, admin.CountNumberOfPatients());
-            Assert.IsFalse(admin.Patients.Contains(patient));
+            Assert.IsFalse(admin.patients.Contains(patient));
             Assert.AreEqual(0, building.Rooms[0].State);
         }
 
@@ -48,14 +48,14 @@ namespace AdminNUnitTest
             // Arrange
             Admin admin = new Admin("AD12345", "John Doe", "M", DateTime.Now.AddYears(-30), "1234567890", "johndoe@example.com", "johndoe", "password", "Day", "Cardiology", "12345");
             Doctor doctor = new Doctor("DOC12345", "Jane Doe", "F", DateTime.Now.AddYears(-35), "1234567890", "janedoe@example.com", "janedoe", "password", "Day", "Cardiology", "Cardiologist", "01");
-            int initialCount = admin.Doctors.Count;
+            int initialCount = admin.doctors.Count;
 
             // Act
             admin.addDoctor(doctor);
 
             // Assert
-            Assert.AreEqual(initialCount + 1, admin.Doctors.Count);
-            Assert.IsTrue(admin.Doctors.Contains(doctor));
+            Assert.AreEqual(initialCount + 1, admin.doctors.Count);
+            Assert.IsTrue(admin.doctors.Contains(doctor));
         }
 
         [Test]
@@ -64,14 +64,14 @@ namespace AdminNUnitTest
             // Arrange
             Admin admin = new Admin("AD12345", "John Doe", "M", DateTime.Now.AddYears(-30), "1234567890", "johndoe@example.com", "johndoe", "password", "Day", "Cardiology", "12345");
             Nurse nurse = new Nurse("NS12345", "Mary Smith", "F", DateTime.Now.AddYears(-25), "1234567890", "marysmith@example.com", "marysmith", "password", "Day", "Cardiology", "02");
-            int initialCount = admin.Nurses.Count;
+            int initialCount = admin.nurses.Count;
 
             // Act
             admin.addNurse(nurse);
 
             // Assert
-            Assert.AreEqual(initialCount + 1, admin.Nurses.Count);
-            Assert.IsTrue(admin.Nurses.Contains(nurse));
+            Assert.AreEqual(initialCount + 1, admin.nurses.Count);
+            Assert.IsTrue(admin.nurses.Contains(nurse));
         }
     }
 }
