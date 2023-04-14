@@ -93,7 +93,7 @@ namespace CSAid_MainWinFormsApp.View
 
         private void logout_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         private void admin_empAccounts1_Load(object sender, EventArgs e)

@@ -58,6 +58,12 @@ namespace CS_Aid_Hospital_Management_System
             PatientList.AddRange(Patients);
             return PatientList;
         }
+        public static List<Item> ItemList()
+        {
+            List<Item> ItemList = new List<Item>();
+            ItemList.AddRange(Items);
+            return ItemList;
+        }
 
         #region Doctors List Serialization and Deserialization
         public static void SerializeDoctors()
@@ -725,7 +731,7 @@ namespace CS_Aid_Hospital_Management_System
                 var stream = new MemoryStream();
                 request.Download(stream);
 
-                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, ItemListFileName), FileMode.Create, FileAccess.Write))
                 {
                     stream.WriteTo(fileStream);
                 }
@@ -889,6 +895,10 @@ namespace CS_Aid_Hospital_Management_System
             adminListQuery.Q = $"name = '{AdminListFileName}' and '{directoryID}' in parents";
             var adminList = adminListQuery.Execute();
 
+            var itemListQuery = service.Files.List();
+            itemListQuery.Q = $"name = '{ItemListFileName}' and '{directoryID}' in parents";
+            var itemList = itemListQuery.Execute();
+
             /*var nurseListQuery = service.Files.List();
             nurseListQuery.Q = $"name = '{"NurseRecord.csaid"}' and '{directoryID}' in parents";
             var nurseList = nurseListQuery.Execute();*/
@@ -902,6 +912,9 @@ namespace CS_Aid_Hospital_Management_System
                 throw new FileNotFoundException("Error: Online database does not contain the patient records masterlist");
 
             if (adminList.Files.Count == 0)
+                throw new FileNotFoundException("Error: Online database does not contain the patient records masterlist");
+
+            if (itemList.Files.Count == 0)
                 throw new FileNotFoundException("Error: Online database does not contain the patient records masterlist");
 
             /*if(nurseList.Files.Count == 0)
@@ -918,6 +931,8 @@ namespace CS_Aid_Hospital_Management_System
             DownloadPatientsList();
             DeserializePatients();
 
+            DownloadItemList();
+            DeserializeItems();
             // ...
         }
     }

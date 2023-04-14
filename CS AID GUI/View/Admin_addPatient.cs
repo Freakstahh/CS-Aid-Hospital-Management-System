@@ -33,7 +33,6 @@ namespace CSAid_MainWinFormsApp.View
         {
             Database.DownloadPatientsList();
             Database.DeserializePatients();
-
             patDataList.DataSource = Database.Patients;
         }
 
@@ -49,6 +48,16 @@ namespace CSAid_MainWinFormsApp.View
                 Database.SerializePatients();
                 Database.UploadPatientList();
                 MessageBox.Show("Data successfully added to database.");
+                lastName.Clear();
+                firstName.Clear();
+                midName.Clear();
+                diag.Clear();
+                patID.Clear();
+                roomNum.Clear();
+                floorNum.Clear();
+                Database.DownloadPatientsList();
+                Database.DeserializePatients();
+                patDataList.DataSource = Database.Patients;
             }
             else
             {

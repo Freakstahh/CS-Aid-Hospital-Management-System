@@ -63,16 +63,16 @@
             panel1 = new Panel();
             patDataListBg = new GroupBox();
             patDataList = new DataGridView();
-            patientBindingSource = new BindingSource(components);
-            birthdateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            admitDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            roomNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            floorNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            patientIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            diagnosisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            middleNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
-            firstNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
             lastNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            firstNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            middleNameDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            diagnosisDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            patientIdDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            floorNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            roomNumberDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            admitDateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            birthdateDataGridViewTextBoxColumn = new DataGridViewTextBoxColumn();
+            patientBindingSource = new BindingSource(components);
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -419,9 +419,9 @@
             patDataListBg.Controls.Add(patDataList);
             patDataListBg.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             patDataListBg.ForeColor = Color.Black;
-            patDataListBg.Location = new Point(76, -47);
+            patDataListBg.Location = new Point(76, -1433);
             patDataListBg.Name = "patDataListBg";
-            patDataListBg.Size = new Size(800, 682);
+            patDataListBg.Size = new Size(800, 2068);
             patDataListBg.TabIndex = 7;
             patDataListBg.TabStop = false;
             patDataListBg.Text = "Patient List";
@@ -443,7 +443,7 @@
             patDataList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             patDataList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             patDataList.Columns.AddRange(new DataGridViewColumn[] { lastNameDataGridViewTextBoxColumn, firstNameDataGridViewTextBoxColumn, middleNameDataGridViewTextBoxColumn, diagnosisDataGridViewTextBoxColumn, patientIdDataGridViewTextBoxColumn, floorNumberDataGridViewTextBoxColumn, roomNumberDataGridViewTextBoxColumn, admitDateDataGridViewTextBoxColumn, birthdateDataGridViewTextBoxColumn });
-            patDataList.Location = new Point(2, 111);
+            patDataList.Location = new Point(2, 1497);
             patDataList.Name = "patDataList";
             patDataList.ReadOnly = true;
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
@@ -462,57 +462,20 @@
             patDataList.Size = new Size(794, 547);
             patDataList.TabIndex = 0;
             // 
-            // patientBindingSource
+            // lastNameDataGridViewTextBoxColumn
             // 
-            patientBindingSource.DataSource = typeof(CS_Aid_Hospital_Management_System.Patient);
+            lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
+            lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
+            lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
+            lastNameDataGridViewTextBoxColumn.ReadOnly = true;
+            lastNameDataGridViewTextBoxColumn.Width = 99;
             // 
-            // birthdateDataGridViewTextBoxColumn
+            // firstNameDataGridViewTextBoxColumn
             // 
-            birthdateDataGridViewTextBoxColumn.DataPropertyName = "Birthdate";
-            birthdateDataGridViewTextBoxColumn.HeaderText = "Birthdate";
-            birthdateDataGridViewTextBoxColumn.Name = "birthdateDataGridViewTextBoxColumn";
-            birthdateDataGridViewTextBoxColumn.ReadOnly = true;
-            birthdateDataGridViewTextBoxColumn.Width = 90;
-            // 
-            // admitDateDataGridViewTextBoxColumn
-            // 
-            admitDateDataGridViewTextBoxColumn.DataPropertyName = "AdmitDate";
-            admitDateDataGridViewTextBoxColumn.HeaderText = "Admission Date";
-            admitDateDataGridViewTextBoxColumn.Name = "admitDateDataGridViewTextBoxColumn";
-            admitDateDataGridViewTextBoxColumn.ReadOnly = true;
-            admitDateDataGridViewTextBoxColumn.Width = 130;
-            // 
-            // roomNumberDataGridViewTextBoxColumn
-            // 
-            roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
-            roomNumberDataGridViewTextBoxColumn.HeaderText = "Room Number";
-            roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
-            roomNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            roomNumberDataGridViewTextBoxColumn.Width = 124;
-            // 
-            // floorNumberDataGridViewTextBoxColumn
-            // 
-            floorNumberDataGridViewTextBoxColumn.DataPropertyName = "FloorNumber";
-            floorNumberDataGridViewTextBoxColumn.HeaderText = "Floor Number";
-            floorNumberDataGridViewTextBoxColumn.Name = "floorNumberDataGridViewTextBoxColumn";
-            floorNumberDataGridViewTextBoxColumn.ReadOnly = true;
-            floorNumberDataGridViewTextBoxColumn.Width = 119;
-            // 
-            // patientIdDataGridViewTextBoxColumn
-            // 
-            patientIdDataGridViewTextBoxColumn.DataPropertyName = "Patient_Id";
-            patientIdDataGridViewTextBoxColumn.HeaderText = "Patient ID";
-            patientIdDataGridViewTextBoxColumn.Name = "patientIdDataGridViewTextBoxColumn";
-            patientIdDataGridViewTextBoxColumn.ReadOnly = true;
-            patientIdDataGridViewTextBoxColumn.Width = 95;
-            // 
-            // diagnosisDataGridViewTextBoxColumn
-            // 
-            diagnosisDataGridViewTextBoxColumn.DataPropertyName = "Diagnosis";
-            diagnosisDataGridViewTextBoxColumn.HeaderText = "Diagnosis";
-            diagnosisDataGridViewTextBoxColumn.Name = "diagnosisDataGridViewTextBoxColumn";
-            diagnosisDataGridViewTextBoxColumn.ReadOnly = true;
-            diagnosisDataGridViewTextBoxColumn.Width = 93;
+            firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
+            firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
+            firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
+            firstNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // middleNameDataGridViewTextBoxColumn
             // 
@@ -522,20 +485,58 @@
             middleNameDataGridViewTextBoxColumn.ReadOnly = true;
             middleNameDataGridViewTextBoxColumn.Width = 116;
             // 
-            // firstNameDataGridViewTextBoxColumn
+            // diagnosisDataGridViewTextBoxColumn
             // 
-            firstNameDataGridViewTextBoxColumn.DataPropertyName = "FirstName";
-            firstNameDataGridViewTextBoxColumn.HeaderText = "First Name";
-            firstNameDataGridViewTextBoxColumn.Name = "firstNameDataGridViewTextBoxColumn";
-            firstNameDataGridViewTextBoxColumn.ReadOnly = true;
+            diagnosisDataGridViewTextBoxColumn.DataPropertyName = "Diagnosis";
+            diagnosisDataGridViewTextBoxColumn.HeaderText = "Diagnosis";
+            diagnosisDataGridViewTextBoxColumn.Name = "diagnosisDataGridViewTextBoxColumn";
+            diagnosisDataGridViewTextBoxColumn.ReadOnly = true;
+            diagnosisDataGridViewTextBoxColumn.Width = 93;
             // 
-            // lastNameDataGridViewTextBoxColumn
+            // patientIdDataGridViewTextBoxColumn
             // 
-            lastNameDataGridViewTextBoxColumn.DataPropertyName = "LastName";
-            lastNameDataGridViewTextBoxColumn.HeaderText = "Last Name";
-            lastNameDataGridViewTextBoxColumn.Name = "lastNameDataGridViewTextBoxColumn";
-            lastNameDataGridViewTextBoxColumn.ReadOnly = true;
-            lastNameDataGridViewTextBoxColumn.Width = 99;
+            patientIdDataGridViewTextBoxColumn.DataPropertyName = "Patient_Id";
+            patientIdDataGridViewTextBoxColumn.HeaderText = "Patient ID";
+            patientIdDataGridViewTextBoxColumn.Name = "patientIdDataGridViewTextBoxColumn";
+            patientIdDataGridViewTextBoxColumn.ReadOnly = true;
+            patientIdDataGridViewTextBoxColumn.Width = 95;
+            // 
+            // floorNumberDataGridViewTextBoxColumn
+            // 
+            floorNumberDataGridViewTextBoxColumn.DataPropertyName = "FloorNumber";
+            floorNumberDataGridViewTextBoxColumn.HeaderText = "Floor Number";
+            floorNumberDataGridViewTextBoxColumn.Name = "floorNumberDataGridViewTextBoxColumn";
+            floorNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            floorNumberDataGridViewTextBoxColumn.Width = 119;
+            // 
+            // roomNumberDataGridViewTextBoxColumn
+            // 
+            roomNumberDataGridViewTextBoxColumn.DataPropertyName = "RoomNumber";
+            roomNumberDataGridViewTextBoxColumn.HeaderText = "Room Number";
+            roomNumberDataGridViewTextBoxColumn.Name = "roomNumberDataGridViewTextBoxColumn";
+            roomNumberDataGridViewTextBoxColumn.ReadOnly = true;
+            roomNumberDataGridViewTextBoxColumn.Width = 124;
+            // 
+            // admitDateDataGridViewTextBoxColumn
+            // 
+            admitDateDataGridViewTextBoxColumn.DataPropertyName = "AdmitDate";
+            admitDateDataGridViewTextBoxColumn.HeaderText = "Admission Date";
+            admitDateDataGridViewTextBoxColumn.Name = "admitDateDataGridViewTextBoxColumn";
+            admitDateDataGridViewTextBoxColumn.ReadOnly = true;
+            admitDateDataGridViewTextBoxColumn.Width = 130;
+            // 
+            // birthdateDataGridViewTextBoxColumn
+            // 
+            birthdateDataGridViewTextBoxColumn.DataPropertyName = "Birthdate";
+            birthdateDataGridViewTextBoxColumn.HeaderText = "Birthdate";
+            birthdateDataGridViewTextBoxColumn.Name = "birthdateDataGridViewTextBoxColumn";
+            birthdateDataGridViewTextBoxColumn.ReadOnly = true;
+            birthdateDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // patientBindingSource
+            // 
+            patientBindingSource.AllowNew = true;
+            patientBindingSource.DataSource = typeof(CS_Aid_Hospital_Management_System.Patient);
             // 
             // Admin_addPatient
             // 
