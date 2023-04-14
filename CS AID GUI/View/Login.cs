@@ -54,7 +54,8 @@ namespace CSAid_MainWinFormsApp.View
                     continue;
 
                 successfulLogin = true;
-                this.Hide();
+                textBox_username.Clear();
+                textBox_pass.Clear();
 
                 if (u is Doctor)
                 {

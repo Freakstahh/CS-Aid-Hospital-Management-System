@@ -16,11 +16,20 @@ public class Program
         //For Testing Only, if Unique Key Works
         Database.Doctors.Clear();
 
-        Doctor rene = new Doctor("01-01", "Renejay de los Reyes", "M", DateTime.Now, "09229390", "sadmirer289@gmail.com", "MyBickIsDig", "IFoccUreMom", "Heart Surgeon", "MTh-8:00 - 11:00 AM", "Emergency", "01");
+        /*Doctor rene = new Doctor("01-01", "Renejay de los Reyes", "M", DateTime.Now, "09229390", "sadmirer289@gmail.com", "MyBickIsDig", "IFoccUreMom", "Heart Surgeon", "MTh-8:00 - 11:00 AM", "Emergency", "01");
 
-        Database.Doctors.Add(rene);
+        Database.Doctors.Add(rene);*/
 
         Database.SerializeDoctors();
         Database.UploadDoctorList();
+
+        Database.Patients.Clear();
+
+        /*Doctor rene = new Doctor("01-01", "Renejay de los Reyes", "M", DateTime.Now, "09229390", "sadmirer289@gmail.com", "MyBickIsDig", "IFoccUreMom", "Heart Surgeon", "MTh-8:00 - 11:00 AM", "Emergency", "01");
+
+        Database.Doctors.Add(rene);*/
+
+        Database.SerializePatients();
+        Database.UploadPatientList();
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CS_Aid_Hospital_Management_System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -93,6 +94,11 @@ namespace CSAid_MainWinFormsApp.View
         private void logout_button_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void admin_empAccounts1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

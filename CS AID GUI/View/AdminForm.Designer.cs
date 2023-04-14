@@ -99,8 +99,9 @@
             panel_upper.Controls.Add(panel_upperRight);
             panel_upper.Dock = DockStyle.Top;
             panel_upper.Location = new Point(0, 0);
+            panel_upper.Margin = new Padding(3, 2, 3, 2);
             panel_upper.Name = "panel_upper";
-            panel_upper.Size = new Size(1902, 115);
+            panel_upper.Size = new Size(1664, 87);
             panel_upper.TabIndex = 0;
             // 
             // panel6
@@ -108,17 +109,19 @@
             panel6.Controls.Add(pictureBox9);
             panel6.Controls.Add(button4);
             panel6.Dock = DockStyle.Left;
-            panel6.Location = new Point(825, 0);
+            panel6.Location = new Point(722, 0);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(107, 111);
+            panel6.Size = new Size(94, 83);
             panel6.TabIndex = 14;
             // 
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.bed;
-            pictureBox9.Location = new Point(24, 0);
+            pictureBox9.Location = new Point(21, 0);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(59, 44);
+            pictureBox9.Size = new Size(52, 33);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox9.TabIndex = 14;
             pictureBox9.TabStop = false;
@@ -129,9 +132,10 @@
             button4.FlatStyle = FlatStyle.Popup;
             button4.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = SystemColors.Control;
-            button4.Location = new Point(6, 43);
+            button4.Location = new Point(5, 32);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(94, 61);
+            button4.Size = new Size(82, 46);
             button4.TabIndex = 13;
             button4.Text = "Available Rooms";
             button4.UseVisualStyleBackColor = false;
@@ -142,17 +146,19 @@
             panel_inventory.Controls.Add(pictureBox8);
             panel_inventory.Controls.Add(button_inventory);
             panel_inventory.Dock = DockStyle.Left;
-            panel_inventory.Location = new Point(718, 0);
+            panel_inventory.Location = new Point(628, 0);
+            panel_inventory.Margin = new Padding(3, 2, 3, 2);
             panel_inventory.Name = "panel_inventory";
-            panel_inventory.Size = new Size(107, 111);
+            panel_inventory.Size = new Size(94, 83);
             panel_inventory.TabIndex = 13;
             // 
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.inventory;
-            pictureBox8.Location = new Point(23, -2);
+            pictureBox8.Location = new Point(20, -2);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(59, 44);
+            pictureBox8.Size = new Size(52, 33);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox8.TabIndex = 13;
             pictureBox8.TabStop = false;
@@ -163,9 +169,10 @@
             button_inventory.FlatStyle = FlatStyle.Popup;
             button_inventory.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button_inventory.ForeColor = SystemColors.Control;
-            button_inventory.Location = new Point(6, 42);
+            button_inventory.Location = new Point(5, 32);
+            button_inventory.Margin = new Padding(3, 2, 3, 2);
             button_inventory.Name = "button_inventory";
-            button_inventory.Size = new Size(94, 61);
+            button_inventory.Size = new Size(82, 46);
             button_inventory.TabIndex = 12;
             button_inventory.Text = "View Inventory";
             button_inventory.UseVisualStyleBackColor = false;
@@ -177,17 +184,19 @@
             panel4.Controls.Add(pictureBox7);
             panel4.Controls.Add(button_empaccs);
             panel4.Dock = DockStyle.Left;
-            panel4.Location = new Point(550, 0);
+            panel4.Location = new Point(481, 0);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(168, 111);
+            panel4.Size = new Size(147, 83);
             panel4.TabIndex = 11;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.medical_team;
-            pictureBox6.Location = new Point(88, 0);
+            pictureBox6.Location = new Point(77, 0);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(59, 44);
+            pictureBox6.Size = new Size(52, 33);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 12;
             pictureBox6.TabStop = false;
@@ -195,9 +204,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.nurse;
-            pictureBox7.Location = new Point(23, 1);
+            pictureBox7.Location = new Point(20, 1);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(59, 44);
+            pictureBox7.Size = new Size(52, 33);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 13;
             pictureBox7.TabStop = false;
@@ -208,9 +218,10 @@
             button_empaccs.FlatStyle = FlatStyle.Popup;
             button_empaccs.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button_empaccs.ForeColor = SystemColors.Control;
-            button_empaccs.Location = new Point(6, 43);
+            button_empaccs.Location = new Point(5, 32);
+            button_empaccs.Margin = new Padding(3, 2, 3, 2);
             button_empaccs.Name = "button_empaccs";
-            button_empaccs.Size = new Size(156, 61);
+            button_empaccs.Size = new Size(136, 46);
             button_empaccs.TabIndex = 10;
             button_empaccs.Text = "Employee Accounts";
             button_empaccs.UseVisualStyleBackColor = false;
@@ -221,17 +232,19 @@
             panel3.Controls.Add(pictureBox5);
             panel3.Controls.Add(button_addappointments);
             panel3.Dock = DockStyle.Left;
-            panel3.Location = new Point(410, 0);
+            panel3.Location = new Point(359, 0);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(140, 111);
+            panel3.Size = new Size(122, 83);
             panel3.TabIndex = 10;
             // 
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.appointment;
-            pictureBox5.Location = new Point(40, 0);
+            pictureBox5.Location = new Point(35, 0);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(59, 44);
+            pictureBox5.Size = new Size(52, 33);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 11;
             pictureBox5.TabStop = false;
@@ -242,9 +255,10 @@
             button_addappointments.FlatStyle = FlatStyle.Popup;
             button_addappointments.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button_addappointments.ForeColor = SystemColors.Control;
-            button_addappointments.Location = new Point(6, 43);
+            button_addappointments.Location = new Point(5, 32);
+            button_addappointments.Margin = new Padding(3, 2, 3, 2);
             button_addappointments.Name = "button_addappointments";
-            button_addappointments.Size = new Size(128, 61);
+            button_addappointments.Size = new Size(112, 46);
             button_addappointments.TabIndex = 10;
             button_addappointments.Text = "Appointments";
             button_addappointments.UseVisualStyleBackColor = false;
@@ -255,9 +269,10 @@
             panel_addpatient.Controls.Add(panel1);
             panel_addpatient.Controls.Add(add_patient);
             panel_addpatient.Dock = DockStyle.Left;
-            panel_addpatient.Location = new Point(303, 0);
+            panel_addpatient.Location = new Point(265, 0);
+            panel_addpatient.Margin = new Padding(3, 2, 3, 2);
             panel_addpatient.Name = "panel_addpatient";
-            panel_addpatient.Size = new Size(107, 111);
+            panel_addpatient.Size = new Size(94, 83);
             panel_addpatient.TabIndex = 9;
             // 
             // panel1
@@ -266,8 +281,9 @@
             panel1.Controls.Add(button2);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(107, 111);
+            panel1.Size = new Size(94, 83);
             panel1.TabIndex = 10;
             // 
             // panel2
@@ -276,16 +292,18 @@
             panel2.Controls.Add(button_addPatient);
             panel2.Dock = DockStyle.Left;
             panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(107, 111);
+            panel2.Size = new Size(94, 83);
             panel2.TabIndex = 11;
             // 
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.hospitalisation;
-            pictureBox4.Location = new Point(27, 1);
+            pictureBox4.Location = new Point(24, 1);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(59, 44);
+            pictureBox4.Size = new Size(52, 33);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 10;
             pictureBox4.TabStop = false;
@@ -296,9 +314,10 @@
             button_addPatient.FlatStyle = FlatStyle.Popup;
             button_addPatient.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button_addPatient.ForeColor = SystemColors.Control;
-            button_addPatient.Location = new Point(6, 44);
+            button_addPatient.Location = new Point(5, 33);
+            button_addPatient.Margin = new Padding(3, 2, 3, 2);
             button_addPatient.Name = "button_addPatient";
-            button_addPatient.Size = new Size(94, 61);
+            button_addPatient.Size = new Size(82, 46);
             button_addPatient.TabIndex = 9;
             button_addPatient.Text = "Patients";
             button_addPatient.UseVisualStyleBackColor = false;
@@ -310,9 +329,10 @@
             button2.FlatStyle = FlatStyle.Popup;
             button2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.Control;
-            button2.Location = new Point(6, 44);
+            button2.Location = new Point(5, 33);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(94, 61);
+            button2.Size = new Size(82, 46);
             button2.TabIndex = 9;
             button2.Text = "Add Patient";
             button2.UseVisualStyleBackColor = false;
@@ -323,9 +343,10 @@
             add_patient.FlatStyle = FlatStyle.Popup;
             add_patient.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             add_patient.ForeColor = SystemColors.Control;
-            add_patient.Location = new Point(6, 44);
+            add_patient.Location = new Point(5, 33);
+            add_patient.Margin = new Padding(3, 2, 3, 2);
             add_patient.Name = "add_patient";
-            add_patient.Size = new Size(94, 61);
+            add_patient.Size = new Size(82, 46);
             add_patient.TabIndex = 9;
             add_patient.Text = "Add Patient";
             add_patient.UseVisualStyleBackColor = false;
@@ -337,16 +358,18 @@
             panel_upperLeft.Controls.Add(pictureBox2);
             panel_upperLeft.Dock = DockStyle.Left;
             panel_upperLeft.Location = new Point(0, 0);
+            panel_upperLeft.Margin = new Padding(3, 2, 3, 2);
             panel_upperLeft.Name = "panel_upperLeft";
-            panel_upperLeft.Size = new Size(303, 111);
+            panel_upperLeft.Size = new Size(265, 83);
             panel_upperLeft.TabIndex = 8;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.purelogo;
-            pictureBox1.Location = new Point(10, 12);
+            pictureBox1.Location = new Point(9, 9);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(98, 91);
+            pictureBox1.Size = new Size(86, 68);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -356,18 +379,19 @@
             label1.AutoSize = true;
             label1.Font = new Font("Agency FB", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(74, 98, 101);
-            label1.Location = new Point(111, 59);
+            label1.Location = new Point(97, 44);
             label1.Name = "label1";
-            label1.Size = new Size(185, 24);
+            label1.Size = new Size(155, 20);
             label1.TabIndex = 2;
             label1.Text = "Hospital Management System";
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.csaidtext;
-            pictureBox2.Location = new Point(91, 27);
+            pictureBox2.Location = new Point(80, 20);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(117, 48);
+            pictureBox2.Size = new Size(102, 36);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -380,9 +404,10 @@
             panel_upperRight.Controls.Add(pictureBox3);
             panel_upperRight.Controls.Add(linkLabel_admin);
             panel_upperRight.Dock = DockStyle.Right;
-            panel_upperRight.Location = new Point(1648, 0);
+            panel_upperRight.Location = new Point(1441, 0);
+            panel_upperRight.Margin = new Padding(3, 2, 3, 2);
             panel_upperRight.Name = "panel_upperRight";
-            panel_upperRight.Size = new Size(250, 111);
+            panel_upperRight.Size = new Size(219, 83);
             panel_upperRight.TabIndex = 7;
             // 
             // logout_button
@@ -390,9 +415,10 @@
             logout_button.FlatStyle = FlatStyle.Flat;
             logout_button.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             logout_button.ForeColor = Color.Red;
-            logout_button.Location = new Point(38, 72);
+            logout_button.Location = new Point(33, 54);
+            logout_button.Margin = new Padding(3, 2, 3, 2);
             logout_button.Name = "logout_button";
-            logout_button.Size = new Size(165, 37);
+            logout_button.Size = new Size(144, 28);
             logout_button.TabIndex = 7;
             logout_button.Text = "Log Out?";
             logout_button.UseVisualStyleBackColor = true;
@@ -403,9 +429,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 9.8F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(33, 198, 182);
-            label3.Location = new Point(47, 13);
+            label3.Location = new Point(41, 10);
             label3.Name = "label3";
-            label3.Size = new Size(113, 23);
+            label3.Size = new Size(93, 19);
             label3.TabIndex = 6;
             label3.Text = "Admin_Name";
             // 
@@ -414,9 +440,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(33, 198, 182);
-            label2.Location = new Point(77, 47);
+            label2.Location = new Point(67, 35);
             label2.Name = "label2";
-            label2.Size = new Size(99, 20);
+            label2.Size = new Size(77, 15);
             label2.TabIndex = 3;
             label2.Text = "Logged in as:";
             label2.Click += label2_Click;
@@ -424,9 +450,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.user__2_;
-            pictureBox3.Location = new Point(11, 7);
+            pictureBox3.Location = new Point(10, 5);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(33, 37);
+            pictureBox3.Size = new Size(29, 28);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -436,9 +463,9 @@
             linkLabel_admin.AutoSize = true;
             linkLabel_admin.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
             linkLabel_admin.LinkColor = Color.FromArgb(33, 198, 182);
-            linkLabel_admin.Location = new Point(174, 44);
+            linkLabel_admin.Location = new Point(152, 33);
             linkLabel_admin.Name = "linkLabel_admin";
-            linkLabel_admin.Size = new Size(65, 25);
+            linkLabel_admin.Size = new Size(54, 20);
             linkLabel_admin.TabIndex = 4;
             linkLabel_admin.TabStop = true;
             linkLabel_admin.Text = "Admin";
@@ -452,9 +479,10 @@
             panel_lower.Controls.Add(admin_availableRooms1);
             panel_lower.Controls.Add(admin_addAppointment1);
             panel_lower.Controls.Add(admin_addPatient1);
-            panel_lower.Location = new Point(0, 115);
+            panel_lower.Location = new Point(0, 86);
+            panel_lower.Margin = new Padding(3, 2, 3, 2);
             panel_lower.Name = "panel_lower";
-            panel_lower.Size = new Size(1902, 918);
+            panel_lower.Size = new Size(1665, 690);
             panel_lower.TabIndex = 1;
             panel_lower.Paint += panel_lower_Paint;
             // 
@@ -462,50 +490,57 @@
             // 
             admin_empAccounts1.BackColor = Color.FromArgb(33, 33, 33);
             admin_empAccounts1.Location = new Point(-2, -2);
+            admin_empAccounts1.Margin = new Padding(3, 2, 3, 2);
             admin_empAccounts1.Name = "admin_empAccounts1";
-            admin_empAccounts1.Size = new Size(1902, 918);
+            admin_empAccounts1.Size = new Size(1664, 688);
             admin_empAccounts1.TabIndex = 6;
+            admin_empAccounts1.Load += admin_empAccounts1_Load;
             // 
             // admin_Inventory1
             // 
             admin_Inventory1.BackColor = Color.FromArgb(33, 33, 33);
             admin_Inventory1.Location = new Point(-2, -2);
+            admin_Inventory1.Margin = new Padding(3, 2, 3, 2);
             admin_Inventory1.Name = "admin_Inventory1";
-            admin_Inventory1.Size = new Size(1902, 918);
+            admin_Inventory1.Size = new Size(1664, 688);
             admin_Inventory1.TabIndex = 5;
             // 
             // admin_availableRooms1
             // 
             admin_availableRooms1.BackColor = Color.FromArgb(33, 33, 33);
             admin_availableRooms1.Location = new Point(-2, -2);
+            admin_availableRooms1.Margin = new Padding(3, 2, 3, 2);
             admin_availableRooms1.Name = "admin_availableRooms1";
-            admin_availableRooms1.Size = new Size(1902, 918);
+            admin_availableRooms1.Size = new Size(1664, 688);
             admin_availableRooms1.TabIndex = 4;
             // 
             // admin_addAppointment1
             // 
             admin_addAppointment1.BackColor = Color.FromArgb(33, 33, 33);
             admin_addAppointment1.Location = new Point(-2, -2);
+            admin_addAppointment1.Margin = new Padding(3, 2, 3, 2);
             admin_addAppointment1.Name = "admin_addAppointment1";
-            admin_addAppointment1.Size = new Size(1902, 918);
+            admin_addAppointment1.Size = new Size(1664, 688);
             admin_addAppointment1.TabIndex = 1;
             // 
             // admin_addPatient1
             // 
             admin_addPatient1.BackColor = Color.FromArgb(33, 33, 33);
             admin_addPatient1.Location = new Point(-2, -2);
+            admin_addPatient1.Margin = new Padding(3, 2, 3, 2);
             admin_addPatient1.Name = "admin_addPatient1";
-            admin_addPatient1.Size = new Size(1902, 918);
+            admin_addPatient1.Size = new Size(1664, 688);
             admin_addPatient1.TabIndex = 0;
             // 
             // AdminForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(33, 33, 33);
-            ClientSize = new Size(1902, 1033);
+            ClientSize = new Size(1664, 775);
             Controls.Add(panel_lower);
             Controls.Add(panel_upper);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AdminForm";
             Text = "CSAid Hospital Management System - Admin";
             WindowState = FormWindowState.Maximized;

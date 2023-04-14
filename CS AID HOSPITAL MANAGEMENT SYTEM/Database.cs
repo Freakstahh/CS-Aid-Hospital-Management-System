@@ -52,6 +52,13 @@ namespace CS_Aid_Hospital_Management_System
             return Masterlist;
         }
 
+        public static List<Patient> PatientList()
+        {
+            List<Patient> PatientList = new List<Patient>();
+            PatientList.AddRange(Patients);
+            return PatientList;
+        }
+
         #region Doctors List Serialization and Deserialization
         public static void SerializeDoctors()
         {
@@ -656,7 +663,7 @@ namespace CS_Aid_Hospital_Management_System
                 var stream = new MemoryStream();
                 request.Download(stream);
 
-                using (var fileStream = new FileStream(Path.Combine(downloadPath, DoctorListFileName), FileMode.Create, FileAccess.Write))
+                using (var fileStream = new FileStream(Path.Combine(downloadPath, PatientsListFileName), FileMode.Create, FileAccess.Write))
                 {
                     stream.WriteTo(fileStream);
                 }
@@ -908,8 +915,8 @@ namespace CS_Aid_Hospital_Management_System
             DownloadAdminList();
             DeserializeAdmins();
 
-            // DownloadPatientList();
-            // DeserializePatients();
+            DownloadPatientsList();
+            DeserializePatients();
 
             // ...
         }
